@@ -81,6 +81,12 @@ function showErrorState(message) {
  * Initialize application after data is loaded
  */
 function initializeApp() {
+  // Load hero image
+  const heroImage = document.getElementById('hero-image');
+  if (heroImage) {
+    heroImage.src = 'assets/images/hero/hero-walking.jpg';
+  }
+
   // Render all cards initially
   renderCards();
 
