@@ -1,0 +1,226 @@
+[
+  {
+    "verb": "andar",
+    "pronunciation": "an-dar",
+    "quickDefinition": "Moverse de un lugar a otro, ir o funcionar",
+    "definition": "Verbo versátil que va más allá del simple caminar. En América Latina, se usa comúnmente para 'ir' o 'estar' en varios estados. Se aplica tanto a seres animados como a objetos inanimados. A diferencia de caminar, andar abarca movimiento general y estados del ser.",
+    "formality": "neutral",
+    "context": "cotidiano",
+    "regions": ["general"],
+    "image": "assets/images/synonyms/andar.jpg",
+    "examples": [
+      "¿Cómo andas? —Ando buscando trabajo.",
+      "El reloj no anda bien desde que se cayó.",
+      "Ando muy cansado últimamente, necesito vacaciones."
+    ],
+    "culturalNotes": "En América Latina, andar se usa más para expresar estados o acciones continuas que para caminar literal. El español mexicano lo favorece en innumerables expresiones idiomáticas como 'andar en las nubes' o 'andar loco por alguien'. Es esencial para el español conversacional natural."
+  },
+  {
+    "verb": "pasear",
+    "pronunciation": "pa-se-ar",
+    "quickDefinition": "Caminar sin prisa por placer o recreación",
+    "definition": "Indica caminar para disfrutar, relajarse o recrearse en lugar de llegar a un destino. Implica un paso tranquilo y generalmente involucra entornos agradables. Se usa comúnmente para pasear mascotas, hacer turismo o simplemente disfrutar del aire fresco.",
+    "formality": "neutral",
+    "context": "cotidiano",
+    "regions": ["general"],
+    "image": "assets/images/synonyms/pasear.jpg",
+    "examples": [
+      "Nos gusta pasear por la playa al atardecer.",
+      "Cada domingo saco a pasear al perro en el parque del barrio.",
+      "Paseamos por el centro histórico sin ningún apuro."
+    ],
+    "culturalNotes": "En América Latina, pasear está fuertemente asociado con actividades sociales y de ocio. 'Dar un paseo' es una actividad común de fin de semana, a menudo con familia o parejas románticas. A diferencia del uso europeo más formal, los hablantes latinoamericanos usan este verbo libremente en contextos casuales y semiforales."
+  },
+  {
+    "verb": "deambular",
+    "pronunciation": "de-am-bu-lar",
+    "quickDefinition": "Vagar sin rumbo fijo o dirección clara",
+    "definition": "Describe movimiento sin destino o propósito claro, a menudo con sentido de deriva. Este verbo tiene peso literario o formal y rara vez se usa en conversación cotidiana. Sugiere una cualidad reflexiva, a veces melancólica, al vagar. En contextos médicos, describe movimiento ambulatorio en hospitales.",
+    "formality": "formal",
+    "context": "literario",
+    "regions": ["general"],
+    "image": "assets/images/synonyms/deambular.jpg",
+    "examples": [
+      "Deambulaba por las calles del barrio viejo, perdido en sus recuerdos.",
+      "Los pacientes pueden deambular libremente por esta área del hospital.",
+      "Después de la noticia, salió a deambular sin rumbo fijo por la ciudad."
+    ],
+    "culturalNotes": "En la literatura latinoamericana, deambular aparece frecuentemente en prosa narrativa, particularmente en obras que exploran la alienación urbana o temas existenciales. En el habla cotidiana, se considera demasiado formal. Sin embargo, en el español médico profesional, es el término estándar para describir la movilidad del paciente."
+  },
+  {
+    "verb": "vagar",
+    "pronunciation": "va-gar",
+    "quickDefinition": "Andar errante sin destino ni propósito fijo",
+    "definition": "Transmite vagabundeo más largo y existencial que deambular, sugiriendo un estilo de vida más que un simple paseo. Este verbo formal y literario implica deriva sin ancla o propósito, a veces por períodos extendidos. Puede describir tanto vagabundeo físico como metafórico a través de la vida.",
+    "formality": "formal",
+    "context": "literario",
+    "regions": ["general"],
+    "image": "assets/images/synonyms/vagar.jpg",
+    "examples": [
+      "Vagó por el mundo durante años, buscando algo que nunca encontró.",
+      "Su mente vagaba mientras miraba por la ventana del tren.",
+      "Vagaban de pueblo en pueblo, sin establecerse en ningún lugar."
+    ],
+    "culturalNotes": "En la literatura latinoamericana, vagar aparece en obras que exploran temas de desplazamiento, exilio o búsqueda espiritual. Es particularmente prominente en la literatura gauchesca de Argentina y Uruguay, donde vagar por las pampas se convierte en metáfora de libertad y soledad."
+  },
+  {
+    "verb": "transitar",
+    "pronunciation": "tran-si-tar",
+    "quickDefinition": "Pasar por un lugar, circular por una vía",
+    "definition": "Verbo formal usado principalmente en contextos legales, de urbanismo o burocráticos. Describe el paso por un área o a lo largo de una ruta, a menudo refiriéndose al tráfico vehicular pero también al movimiento peatonal en discurso oficial. Aparece frecuentemente en señalización oficial y regulaciones de tráfico.",
+    "formality": "formal",
+    "context": "profesional",
+    "regions": ["general"],
+    "image": "assets/images/synonyms/transitar.jpg",
+    "examples": [
+      "Está prohibido transitar por esta zona durante las obras.",
+      "Los peatones pueden transitar libremente por el paseo marítimo.",
+      "Vehículos pesados no pueden transitar por el centro histórico."
+    ],
+    "culturalNotes": "En toda América Latina, transitar aparece casi exclusivamente en contextos oficiales: señales de tráfico, regulaciones municipales y reportes noticiosos sobre tráfico. En el habla cotidiana sonaría burocrático; la gente dice 'pasar por' o 'ir por'. Sin embargo, se entiende universalmente debido a su presencia en señales ubicuas de 'No transitar'."
+  },
+  {
+    "verb": "peregrinar",
+    "pronunciation": "pe-re-gri-nar",
+    "quickDefinition": "Hacer una peregrinación con propósito espiritual",
+    "definition": "Denota específicamente hacer una peregrinación, típicamente por razones religiosas o espirituales. Este verbo formal describe viajes largos y con propósito, a menudo realizados a pie hacia sitios sagrados. Aunque su significado primario es religioso, puede usarse metafóricamente para describir cualquier viaje o búsqueda significativa.",
+    "formality": "formal",
+    "context": "narrativo",
+    "regions": ["general"],
+    "image": "assets/images/synonyms/peregrinar.jpg",
+    "examples": [
+      "Miles de fieles peregrinan cada año a la Basílica de Guadalupe.",
+      "Peregrinó durante meses por el Camino de Santiago.",
+      "Peregrinar por la vida en busca de la verdad es una tarea noble."
+    ],
+    "culturalNotes": "En América Latina, peregrinar está fuertemente asociado con la devoción católica y sitios importantes de peregrinación como la Basílica de Nuestra Señora de Guadalupe en México. El verbo tiene profundo significado religioso y se usa respetuosamente en contextos que involucran fe. Más allá de contextos religiosos, escritores latinoamericanos lo emplean metafóricamente."
+  },
+  {
+    "verb": "desplazarse",
+    "pronunciation": "des-pla-zar-se",
+    "quickDefinition": "Moverse o trasladarse de un lugar a otro",
+    "definition": "Verbo reflexivo que describe movimiento de un lugar a otro sin especificar el medio de transporte. Este verbo versátil y formal se usa comúnmente cuando el método de viaje no es importante. Aparece frecuentemente en contextos profesionales, reportes noticiosos y habla formal. En contextos humanitarios, también se refiere al desplazamiento forzado de poblaciones.",
+    "formality": "neutral",
+    "context": "profesional",
+    "regions": ["general"],
+    "image": "assets/images/synonyms/desplazarse.jpg",
+    "examples": [
+      "Me desplazo al trabajo en metro porque hay mucho tráfico.",
+      "La población se vio obligada a desplazarse debido al conflicto.",
+      "¿Cómo te desplazas por la ciudad normalmente?"
+    ],
+    "culturalNotes": "En América Latina, desplazarse es estándar en reportes noticiosos sobre migración, desplazamiento y movilidad urbana. Es el verbo preferido en discusiones sobre transporte público, urbanismo y cuestiones de refugiados. En Colombia y Venezuela, donde el desplazamiento interno ha sido significativo, el verbo tiene peso particular."
+  },
+  {
+    "verb": "circular",
+    "pronunciation": "cir-cu-lar",
+    "quickDefinition": "Moverse por un área, transitar o fluir",
+    "definition": "Describe movimiento dentro de un área o a lo largo de una ruta, comúnmente refiriéndose al tráfico vehicular pero también al movimiento peatonal en contextos urbanos. Este verbo enfatiza el flujo o circulación del movimiento. Aparece frecuentemente en reportes de tráfico, discurso de urbanismo y señales de tráfico.",
+    "formality": "neutral",
+    "context": "profesional",
+    "regions": ["general"],
+    "image": "assets/images/synonyms/circular.jpg",
+    "examples": [
+      "Los vehículos no pueden circular por esta calle los domingos.",
+      "La sangre circula por todo el cuerpo a través de las venas.",
+      "Circulan muchos rumores sobre la renuncia del director."
+    ],
+    "culturalNotes": "En América Latina, circular es ubicuo en reportes de tráfico y regulaciones viales. Los locutores de radio lo usan constantemente cuando describen condiciones de tráfico. En países con restricciones de tráfico frecuentes (como el programa 'Hoy No Circula' de Ciudad de México), el verbo aparece en conversación diaria."
+  },
+  {
+    "verb": "recorrer",
+    "pronunciation": "re-co-rrer",
+    "quickDefinition": "Atravesar o cubrir una distancia o área",
+    "definition": "Enfatiza cubrir o atravesar una distancia o área, a menudo implicando exploración o minuciosidad. Este verbo común describe tanto caminar como otras formas de transporte cuando el enfoque está en la extensión de terreno cubierto. Sugiere experimentar u observar un área en lugar de simplemente pasar por ella.",
+    "formality": "neutral",
+    "context": "cotidiano",
+    "regions": ["general"],
+    "image": "assets/images/synonyms/recorrer.jpg",
+    "examples": [
+      "Recorrimos toda la ciudad en un solo día, ¡estamos agotados!",
+      "El río recorre cientos de kilómetros hasta llegar al mar.",
+      "Recorrió la casa con la mirada, buscando algún cambio."
+    ],
+    "culturalNotes": "En América Latina, recorrer es extremadamente común en contextos de viaje y habla cotidiana. Es el verbo natural para describir turismo, exploración o cubrir distancias. Funciona igualmente bien para caminar, conducir o cualquier forma de viaje donde se enfatiza la distancia. Es particularmente popular en blogs de viaje, guías turísticas y narrativas de aventura."
+  },
+  {
+    "verb": "trajinar",
+    "pronunciation": "tra-ji-nar",
+    "quickDefinition": "Andar atareado llevando cosas o haciendo diligencias",
+    "definition": "Describe movimiento ocupado y con propósito, a menudo involucrando el transporte de objetos, hacer mandados o realizar tareas. Este verbo coloquial transmite un sentido de industriosidad o movimiento constante, frecuentemente con componente de labor física. Implica estar ocupado con asuntos prácticos, yendo y viniendo.",
+    "formality": "neutral",
+    "context": "cotidiano",
+    "regions": ["general"],
+    "image": "assets/images/synonyms/trajinar.jpg",
+    "examples": [
+      "He estado trajinando todo el día con los preparativos de la fiesta.",
+      "Mi abuela trajina en la cocina desde temprano en la mañana.",
+      "Los trabajadores trajinaban de un lado a otro, cargando cajas."
+    ],
+    "culturalNotes": "En América Latina, trajinar es particularmente común en áreas rurales y entre comunidades de clase trabajadora. Evoca imágenes de personas trabajadoras constantemente en movimiento. En México y Centroamérica, el verbo tiene connotaciones afectuosas cuando describe la laboriosidad de alguien. Permanece vibrante en el habla informal."
+  },
+  {
+    "verb": "rondar",
+    "pronunciation": "ron-dar",
+    "quickDefinition": "Patrullar, merodear o estar alrededor de un área",
+    "definition": "Describe circular o moverse alrededor de un área repetidamente, a menudo con implicaciones de vigilancia, espera o amenaza. Este verbo versátil se aplica a guardias patrullando, depredadores merodeando o personas rondando cerca de un lugar. También puede significar estar alrededor de cierta edad o cantidad. La palabra sugiere movimiento repetitivo o circular.",
+    "formality": "neutral",
+    "context": "cotidiano",
+    "regions": ["general"],
+    "image": "assets/images/synonyms/rondar.jpg",
+    "examples": [
+      "El vigilante ronda el edificio cada hora durante la noche.",
+      "Había un hombre sospechoso rondando la tienda desde hace rato.",
+      "Los precios de las casas en este barrio rondan el millón de dólares."
+    ],
+    "culturalNotes": "En América Latina, rondar aparece frecuentemente en contextos de seguridad y crimen. Los reportes noticiosos lo usan para describir actividad sospechosa. En el habla cotidiana, es común para expresar edades o cantidades aproximadas. En contextos románticos, particularmente en generaciones mayores, 'rondar a alguien' significa cortejar a alguien."
+  },
+  {
+    "verb": "callejear",
+    "pronunciation": "ca-lle-je-ar",
+    "quickDefinition": "Vagar por las calles sin destino particular",
+    "definition": "Describe específicamente vagar por calles de la ciudad sin destino particular, a menudo por placer o curiosidad. Este verbo informal evoca exploración urbana, descubrimiento de barrios o simplemente disfrutar de la vida callejera. Es distintivamente urbano y sugiere una cualidad tranquila y sin rumbo. A diferencia de pasear, callejear está inherentemente ligado a calles y paisajes urbanos.",
+    "formality": "neutral",
+    "context": "cotidiano",
+    "regions": ["general"],
+    "image": "assets/images/synonyms/callejear.jpg",
+    "examples": [
+      "Nos gusta callejear por el centro histórico los fines de semana.",
+      "Pasé la tarde callejeando, viendo las vitrinas y la gente.",
+      "Callejeando por el barrio descubrí un café increíble."
+    ],
+    "culturalNotes": "En América Latina, callejear se entiende pero es algo menos común que en España. La juventud urbana en ciudades como Buenos Aires, Ciudad de México o Bogotá lo usa para describir exploración de barrios, especialmente áreas de moda o bohemias. El verbo tiene una connotación ligeramente hipster o cultural, sugiriendo apreciación de la vida urbana."
+  },
+  {
+    "verb": "vagabundear",
+    "pronunciation": "va-ga-bun-de-ar",
+    "quickDefinition": "Vagar como vagabundo, vivir estilo errante",
+    "definition": "Describe vagar a la manera de un vagabundo, a menudo con implicaciones de falta de hogar, falta de rumbo o rechazo de la sociedad convencional. Este verbo tiene connotaciones más fuertes que vagar, sugiriendo no solo vagabundeo sino una elección de estilo de vida o circunstancia de marginalidad. Puede usarse peyorativamente o románticamente para celebrar la libertad de las restricciones sociales.",
+    "formality": "neutral",
+    "context": "cotidiano",
+    "regions": ["general"],
+    "image": "assets/images/synonyms/vagabundear.jpg",
+    "examples": [
+      "Después de perder su trabajo, pasó meses vagabundeando por las calles.",
+      "Me gusta vagabundear por los mercados de pulgas, nunca sabes qué vas a encontrar.",
+      "En su juventud vagabundeó por toda Europa con una mochila y una guitarra."
+    ],
+    "culturalNotes": "En América Latina, vagabundear a menudo tiene connotaciones peyorativas cuando describe la falta de hogar real o el desempleo. Sin embargo, los jóvenes a veces lo reclaman románticamente cuando discuten mochilero o viajes no convencionales. En literatura, particularmente obras que tratan con marginalidad urbana o vida bohemia, el verbo aparece con significados matizados."
+  },
+  {
+    "verb": "errar",
+    "pronunciation": "e-rrar",
+    "quickDefinition": "Equivocarse; (arcaico/literario) vagar o errar",
+    "definition": "Principalmente significa 'cometer errores' en español contemporáneo, pero en uso literario o arcaico, también significa 'vagar'. Este verbo formal aparece en literatura clásica y poesía para describir vagabundeo, a menudo con matices existenciales o metafóricos. En uso moderno, este significado está obsoleto en habla cotidiana, preservado principalmente en contextos literarios elevados.",
+    "formality": "formal",
+    "context": "literario",
+    "regions": ["general"],
+    "image": "assets/images/synonyms/errar.jpg",
+    "examples": [
+      "Erraba por los campos como alma en pena, buscando redención.",
+      "Como Ulises, erró durante años antes de hallar su hogar.",
+      "Si he errado en mi juicio, pido disculpas."
+    ],
+    "culturalNotes": "En América Latina, errar en el sentido de 'vagar' aparece casi exclusivamente en obras literarias, referencias clásicas o habla deliberadamente arcaica. Los hablantes contemporáneos lo usan abrumadoramente para significar 'cometer errores'. El sentido de vagabundeo podría aparecer en poesía formal, novelas históricas o al invocar temas clásicos."
+  }
+]

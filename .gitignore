@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Memory/Session files (from Claude Flow)
+.swarm/
+.hive-mind/
+
+# Optional: Don't commit audio/images (re-generate from scripts)
+# Uncomment these if you want to keep assets out of git
+# src/assets/audio/
+# src/assets/images/
