@@ -1,0 +1,267 @@
+/* ===================================
+   Modal Styling
+   =================================== */
+
+/* Modal Overlay */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal[style*="display: flex"] {
+  display: flex !important;
+}
+
+/* Modal Backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+/* Modal Wrapper */
+.modal-wrapper {
+  position: relative;
+  background: white;
+  border-radius: 16px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+/* Modal Close Button */
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+
+.modal-close svg {
+  width: 24px;
+  height: 24px;
+  color: #1a1410;
+}
+
+/* Modal Content */
+#modal-content {
+  padding: 0;
+}
+
+/* Modal Image */
+.modal-image {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 16px 16px 0 0;
+}
+
+.modal-image .image-credit {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 32px;
+}
+
+/* Modal Header */
+.modal-header {
+  margin-bottom: 24px;
+}
+
+.modal-verb {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1410;
+  margin: 0 0 8px 0;
+}
+
+.modal-pronunciation {
+  font-size: 18px;
+  color: #6b5d4f;
+  font-style: italic;
+  display: block;
+  margin-bottom: 16px;
+}
+
+/* Modal Sections */
+.modal-section {
+  margin-bottom: 24px;
+}
+
+.modal-section h3 {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #3d2e1f;
+  margin: 0 0 12px 0;
+}
+
+.modal-definition,
+.modal-cultural {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a4237;
+  margin: 0;
+}
+
+/* Example List */
+.example-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.example-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  background-color: #f5f1ed;
+  border-left: 3px solid #a89080;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.example-spanish {
+  flex: 1;
+  font-size: 15px;
+  color: #3d2e1f;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.example-spanish strong {
+  color: #1a1410;
+  font-weight: 600;
+}
+
+.example-list .audio-button {
+  flex-shrink: 0;
+}
+
+/* Usage Grid */
+.usage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.usage-item {
+  padding: 12px;
+  background-color: #f5f1ed;
+  border-radius: 8px;
+}
+
+.usage-item strong {
+  display: block;
+  font-size: 14px;
+  color: #6b5d4f;
+  margin-bottom: 8px;
+}
+
+/* Context Tags */
+.context-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.context-tag {
+  padding: 4px 10px;
+  background-color: #3d2e1f;
+  color: white;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Related Verbs */
+.related-verbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.related-verb {
+  padding: 8px 16px;
+  background-color: #a89080;
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Audio Button Sizes */
+.audio-button.large {
+  font-size: 18px;
+  padding: 14px 24px;
+}
+
+.audio-button.small {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .modal-wrapper {
+    max-height: 95vh;
+    margin: 10px;
+  }
+
+  .modal-body {
+    padding: 20px;
+  }
+
+  .modal-verb {
+    font-size: 28px;
+  }
+
+  .modal-close {
+    top: 12px;
+    right: 12px;
+  }
+}

@@ -22,6 +22,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/verb-cards.css">
+    <link rel="stylesheet" href="styles/modal.css">
 </head>
 <body>
     <!-- Hero Section -->
@@ -122,49 +123,16 @@
     </main>
 
     <!-- Detail Modal -->
-    <div class="modal" id="verb-modal" role="dialog" aria-modal="true" aria-labelledby="modal-verb" style="display: none;">
+    <div class="modal" id="verb-modal" role="dialog" aria-modal="true" style="display: none;">
         <div class="modal-backdrop" onclick="closeModal()" aria-hidden="true"></div>
-        <div class="modal-content" role="document">
+        <div class="modal-wrapper" role="document">
             <button class="modal-close" onclick="closeModal()" aria-label="Cerrar modal">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <path d="M18 6L6 18M6 6l12 12"/>
                 </svg>
             </button>
-
-            <div class="modal-body">
-                <div class="modal-image-container">
-                    <img id="modal-image" src="" alt="" class="modal-image">
-                    <div class="modal-image-credit" id="modal-image-credit"></div>
-                </div>
-
-                <div class="modal-details">
-                    <div class="modal-header">
-                        <h2 class="modal-verb" id="modal-verb"></h2>
-                        <span class="modal-pronunciation" id="modal-pronunciation">
-                            <button id="modal-audio-button" class="audio-button" aria-label="Reproducir pronunciación"></button>
-                            <span id="modal-pronunciation-text"></span>
-                        </span>
-                    </div>
-
-                    <div class="modal-tags" id="modal-tags" role="list" aria-label="Etiquetas del verbo"></div>
-
-                    <div class="modal-section">
-                        <h3 class="section-title">Definición</h3>
-                        <p class="modal-definition" id="modal-definition"></p>
-                    </div>
-
-                    <div class="modal-section">
-                        <h3 class="section-title">Ejemplos</h3>
-                        <ul class="examples-list" id="modal-examples" role="list">
-                            <!-- Examples will be dynamically inserted here -->
-                        </ul>
-                    </div>
-
-                    <div class="modal-section" id="modal-cultural-section">
-                        <h3 class="section-title">Notas Culturales</h3>
-                        <p class="modal-cultural" id="modal-cultural"></p>
-                    </div>
-                </div>
+            <div id="modal-content">
+                <!-- Modal content will be dynamically inserted here -->
             </div>
         </div>
     </div>

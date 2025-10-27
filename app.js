@@ -455,36 +455,21 @@ function openModal(index) {
       </div>
 
       <div class="modal-section">
-        <h3>Usage Information</h3>
+        <h3>Información de Uso</h3>
         <div class="usage-grid">
           <div class="usage-item">
-            <strong>Formality:</strong>
+            <strong>Formalidad:</strong>
             <span class="formality-badge ${verb.formality}">${verb.formality}</span>
           </div>
           <div class="usage-item">
-            <strong>Contexts:</strong>
+            <strong>Contexto:</strong>
             <div class="context-tags">
-              ${verb.contexts.map(ctx => `<span class="context-tag">${ctx}</span>`).join('')}
+              <span class="context-tag">${verb.context}</span>
             </div>
           </div>
         </div>
       </div>
 
-      ${verb.culturalNote ? `
-        <div class="modal-section cultural-note">
-          <h3>Cultural Note</h3>
-          <p>${verb.culturalNote}</p>
-        </div>
-      ` : ''}
-
-      ${verb.relatedVerbs && verb.relatedVerbs.length > 0 ? `
-        <div class="modal-section">
-          <h3>Related Verbs</h3>
-          <div class="related-verbs">
-            ${verb.relatedVerbs.map(related => `<span class="related-verb">${related}</span>`).join('')}
-          </div>
-        </div>
-      ` : ''}
     </div>
   `;
 
@@ -557,8 +542,8 @@ function playAudio(audioPath, buttonElement) {
   });
 
   try {
-    // Create new audio instance
-    const audio = new Audio(`./assets/audio/${audioPath}`);
+    // Create new audio instance (audioPath already includes full path)
+    const audio = new Audio(audioPath);
     state.currentAudio = audio;
 
     // Add playing indicator
