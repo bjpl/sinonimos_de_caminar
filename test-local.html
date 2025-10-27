@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Data Loading</title>
+</head>
+<body>
+    <h1>Data Loading Test</h1>
+    <div id="output"></div>
+
+    <script>
+        async function testLoad() {
+            try {
+                console.log('Loading synonyms.json...');
+                const response = await fetch('./data/synonyms.json');
+                const data = await response.json();
+
+                document.getElementById('output').innerHTML = `
+                    <p>Loaded ${data.length} verbs</p>
+                    <p>First verb: ${data[0].verb}</p>
+                    <p>Image path: ${data[0].image}</p>
+                    <p>Quick def: ${data[0].quickDefinition}</p>
+                    <img src="${data[0].image}" style="max-width: 300px;" onerror="this.alt='Image failed to load: ' + this.src">
+                `;
+
+                console.log('Data:', data);
+            } catch (error) {
+                document.getElementById('output').innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+                console.error(error);
+            }
+        }
+
+        testLoad();
+    </script>
+</body>
+</html>
