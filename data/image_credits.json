@@ -1,263 +1,124 @@
 {
-  "generated_at": "2025-10-27T01:09:29.374Z",
-  "total_images": 15,
-  "attribution_required": true,
-  "attribution_text": "Photos provided by Unsplash",
   "images": {
     "hero": {
       "filename": "hero-walking.jpg",
-      "category": "hero",
-      "photographer": {
-        "name": "Yogesh Pedamkar",
-        "username": "yogesh_7",
-        "profile_url": "https://unsplash.com/@yogesh_7"
-      },
-      "photo": {
-        "id": "h9lQSZOzodU",
-        "url": "https://images.unsplash.com/photo-1759593523041-72a5eddec1a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDkwNzh8MHwxfHNlYXJjaHwxfHx3YWxraW5nJTIwcGF0aCUyMGpvdXJuZXklMjBzY2VuaWMlMjB0cmFpbCUyMG5hdHVyZXxlbnwwfDB8fHwxNzYxNTI3MzE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-        "unsplash_url": "https://unsplash.com/photos/stone-steps-ascend-through-lush-green-forest-foliage-h9lQSZOzodU",
-        "description": "Stone steps ascend through lush green forest foliage.",
-        "color": "#26260c"
-      },
-      "downloaded_at": "2025-10-27T01:08:39.980Z"
+      "photographer": "Yogesh Pedamkar",
+      "photographerUrl": "https://unsplash.com/@yogesh_7",
+      "unsplashUrl": "https://unsplash.com/photos/stone-steps-ascend-through-lush-green-forest-foliage-h9lQSZOzodU",
+      "description": "Stone steps ascend through lush green forest foliage.",
+      "color": "#26260c"
     },
     "andar": {
       "filename": "andar.jpg",
-      "category": "synonym",
-      "photographer": {
-        "name": "Alain ROUILLER",
-        "username": "alainr",
-        "profile_url": "https://unsplash.com/@alainr"
-      },
-      "photo": {
-        "id": "RVLI0RoK6ac",
-        "url": "https://images.unsplash.com/photo-1759244984807-68ce00988fa5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDkwNzh8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjB3YWxraW5nJTIwY2l0eSUyMHN0cmVldCUyMGRheWxpZ2h0JTIwdXJiYW58ZW58MHwwfHx8MTc2MTUyNzMyMXww&ixlib=rb-4.1.0&q=80&w=1080",
-        "unsplash_url": "https://unsplash.com/photos/people-walking-down-a-sunny-narrow-european-street-RVLI0RoK6ac",
-        "description": "Les ruisselets (Bächle) de Fribourg animent la vieille-ville : les jeunes enfants y font naviguer de petits bateaux de bois et des passants s’y rafraîchissent les pieds en été. Les piétons à Fribourg bénéficient d’un cœur urbain largement piétonnisé, connecté aux tramways et bus, ce qui rend les déplacements doux fluides et agréables.",
-        "color": "#d9c0a6"
-      },
-      "downloaded_at": "2025-10-27T01:08:43.315Z"
+      "photographer": "Alain ROUILLER",
+      "photographerUrl": "https://unsplash.com/@alainr",
+      "unsplashUrl": "https://unsplash.com/photos/people-walking-down-a-sunny-narrow-european-street-RVLI0RoK6ac",
+      "description": "People walking down a sunny narrow European street",
+      "color": "#d9c0a6"
     },
     "pasear": {
       "filename": "pasear.jpg",
-      "category": "synonym",
-      "photographer": {
-        "name": "Tu Tran Anh",
-        "username": "tutrananh109",
-        "profile_url": "https://unsplash.com/@tutrananh109"
-      },
-      "photo": {
-        "id": "5Qxh7qiuPms",
-        "url": "https://images.unsplash.com/photo-1749111052258-abfc1d13b513?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDkwNzh8MHwxfHNlYXJjaHwxfHxsZWlzdXJlbHklMjB3YWxrJTIwcGFyayUyMG5hdHVyZSUyMHN1bnNldCUyMHBlb3BsZXxlbnwwfDB8fHwxNzYxNTI3MzI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-        "unsplash_url": "https://unsplash.com/photos/people-stroll-along-a-path-in-a-forest-5Qxh7qiuPms",
-        "description": "People stroll along a path in a forest.",
-        "color": "#26260c"
-      },
-      "downloaded_at": "2025-10-27T01:08:46.263Z"
+      "photographer": "Tu Tran Anh",
+      "photographerUrl": "https://unsplash.com/@tutrananh109",
+      "unsplashUrl": "https://unsplash.com/photos/people-stroll-along-a-path-in-a-forest-5Qxh7qiuPms",
+      "description": "People stroll along a path in a forest.",
+      "color": "#26260c"
     },
     "deambular": {
       "filename": "deambular.jpg",
-      "category": "synonym",
-      "photographer": {
-        "name": "Thierry Biland",
-        "username": "thierry_biland",
-        "profile_url": "https://unsplash.com/@thierry_biland"
-      },
-      "photo": {
-        "id": "XoXpYiBrbSA",
-        "url": "https://images.unsplash.com/photo-1710273376326-fe627777adfc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDkwNzh8MHwxfHNlYXJjaHwxfHx3YW5kZXJpbmclMjB1cmJhbiUyMGxhbmRzY2FwZSUyMGFsb25lJTIwY29udGVtcGxhdGl2ZXxlbnwwfDB8fHwxNzYxNTI3MzI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-        "unsplash_url": "https://unsplash.com/photos/a-black-and-white-photo-of-a-city-skyline-XoXpYiBrbSA",
-        "description": "a black and white photo of a city skyline",
-        "color": "#262626"
-      },
-      "downloaded_at": "2025-10-27T01:08:49.833Z"
+      "photographer": "Thierry Biland",
+      "photographerUrl": "https://unsplash.com/@thierry_biland",
+      "unsplashUrl": "https://unsplash.com/photos/a-black-and-white-photo-of-a-city-skyline-XoXpYiBrbSA",
+      "description": "A black and white photo of a city skyline",
+      "color": "#262626"
     },
     "vagar": {
       "filename": "vagar.jpg",
-      "category": "synonym",
-      "photographer": {
-        "name": "Jens De Decker",
-        "username": "jensdedecker",
-        "profile_url": "https://unsplash.com/@jensdedecker"
-      },
-      "photo": {
-        "id": "Si6XF3-6AtI",
-        "url": "https://images.unsplash.com/photo-1670172072964-d5a4aff7de22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDkwNzh8MHwxfHNlYXJjaHwxfHxsb25lJTIwcGVyc29uJTIwd2FuZGVyaW5nJTIwbmF0dXJlJTIwd2lsZGVybmVzcyUyMHBhdGh8ZW58MHwwfHx8MTc2MTUyNzMzMXww&ixlib=rb-4.1.0&q=80&w=1080",
-        "unsplash_url": "https://unsplash.com/photos/a-person-walking-on-a-dirt-road-surrounded-by-trees-Si6XF3-6AtI",
-        "description": "Hiking through the Swedish forests",
-        "color": "#26260c"
-      },
-      "downloaded_at": "2025-10-27T01:08:53.949Z"
+      "photographer": "Jens De Decker",
+      "photographerUrl": "https://unsplash.com/@jensdedecker",
+      "unsplashUrl": "https://unsplash.com/photos/a-person-walking-on-a-dirt-road-surrounded-by-trees-Si6XF3-6AtI",
+      "description": "Hiking through the Swedish forests",
+      "color": "#26260c"
     },
     "transitar": {
       "filename": "transitar.jpg",
-      "category": "synonym",
-      "photographer": {
-        "name": "Artem Shuba",
-        "username": "ashuba",
-        "profile_url": "https://unsplash.com/@ashuba"
-      },
-      "photo": {
-        "id": "QGXoCi1trDQ",
-        "url": "https://images.unsplash.com/photo-1686382230536-f61fe6ac6348?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDkwNzh8MHwxfHNlYXJjaHwxfHxwZWRlc3RyaWFuJTIwY3Jvc3NpbmclMjBzdHJlZXQlMjB1cmJhbiUyMG1vdmVtZW50fGVufDB8MHx8fDE3NjE1MjczMzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-        "unsplash_url": "https://unsplash.com/photos/a-city-street-filled-with-lots-of-tall-buildings-QGXoCi1trDQ",
-        "description": "a city street filled with lots of tall buildings",
-        "color": "#404040"
-      },
-      "downloaded_at": "2025-10-27T01:08:57.413Z"
+      "photographer": "Artem Shuba",
+      "photographerUrl": "https://unsplash.com/@ashuba",
+      "unsplashUrl": "https://unsplash.com/photos/a-city-street-filled-with-lots-of-tall-buildings-QGXoCi1trDQ",
+      "description": "A city street filled with lots of tall buildings",
+      "color": "#404040"
     },
     "peregrinar": {
       "filename": "peregrinar.jpg",
-      "category": "synonym",
-      "photographer": {
-        "name": "Ajay Kumar Jana",
-        "username": "ajay_jana",
-        "profile_url": "https://unsplash.com/@ajay_jana"
-      },
-      "photo": {
-        "id": "QV__8q7dJ7c",
-        "url": "https://images.unsplash.com/photo-1591081213486-7fcd1cd108ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDkwNzh8MHwxfHNlYXJjaHwxfHxwaWxncmltYWdlJTIwcGF0aCUyMGNhbWlubyUyMGpvdXJuZXklMjB3YWxraW5nJTIwc3Bpcml0dWFsfGVufDB8MHx8fDE3NjE1MjczMzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-        "unsplash_url": "https://unsplash.com/photos/green-trees-on-brown-soil-QV__8q7dJ7c",
-        "description": "green trees on brown soil",
-        "color": "#0c260c"
-      },
-      "downloaded_at": "2025-10-27T01:09:00.522Z"
+      "photographer": "Ajay Kumar Jana",
+      "photographerUrl": "https://unsplash.com/@ajay_jana",
+      "unsplashUrl": "https://unsplash.com/photos/green-trees-on-brown-soil-QV__8q7dJ7c",
+      "description": "Green trees on brown soil",
+      "color": "#0c260c"
     },
     "desplazarse": {
       "filename": "desplazarse.jpg",
-      "category": "synonym",
-      "photographer": {
-        "name": "Marjan Blan",
-        "username": "marjan_blan",
-        "profile_url": "https://unsplash.com/@marjan_blan"
-      },
-      "photo": {
-        "id": "9VZxbX1TKBU",
-        "url": "https://images.unsplash.com/photo-1564162583094-16c10d9f0f58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDkwNzh8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBtb3ZpbmclMjB3YWxraW5nJTIwY29tbXV0ZSUyMHRyYXZlbCUyMG1vdGlvbnxlbnwwfDB8fHwxNzYxNTI3MzQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-        "unsplash_url": "https://unsplash.com/photos/person-walking-beside-wall-9VZxbX1TKBU",
-        "description": "person walking beside wall",
-        "color": "#262626"
-      },
-      "downloaded_at": "2025-10-27T01:09:03.542Z"
+      "photographer": "Marjan Blan",
+      "photographerUrl": "https://unsplash.com/@marjan_blan",
+      "unsplashUrl": "https://unsplash.com/photos/person-walking-beside-wall-9VZxbX1TKBU",
+      "description": "Person walking beside wall",
+      "color": "#262626"
     },
     "circular": {
       "filename": "circular.jpg",
-      "category": "synonym",
-      "photographer": {
-        "name": "Sasha Matveeva",
-        "username": "sashamatveeva",
-        "profile_url": "https://unsplash.com/@sashamatveeva"
-      },
-      "photo": {
-        "id": "ethLap67rgw",
-        "url": "https://images.unsplash.com/photo-1681846780077-885116885842?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDkwNzh8MHwxfHNlYXJjaHwxfHxwZW9wbGUlMjBjaXJjdWxhdGluZyUyMHB1YmxpYyUyMHNwYWNlJTIwcGxhemElMjBjcm93ZHxlbnwwfDB8fHwxNzYxNTI3MzQ0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-        "unsplash_url": "https://unsplash.com/photos/a-crowd-of-people-standing-around-a-building-at-night-ethLap67rgw",
-        "description": "protests in tbilisi georgia | 35mm",
-        "color": "#0c260c"
-      },
-      "downloaded_at": "2025-10-27T01:09:06.340Z"
+      "photographer": "Sasha Matveeva",
+      "photographerUrl": "https://unsplash.com/@sashamatveeva",
+      "unsplashUrl": "https://unsplash.com/photos/a-crowd-of-people-standing-around-a-building-at-night-ethLap67rgw",
+      "description": "Protests in Tbilisi Georgia",
+      "color": "#0c260c"
     },
     "recorrer": {
       "filename": "recorrer.jpg",
-      "category": "synonym",
-      "photographer": {
-        "name": "Alex Moliski",
-        "username": "alexmoliski",
-        "profile_url": "https://unsplash.com/@alexmoliski"
-      },
-      "photo": {
-        "id": "RP7HiaiE5Ac",
-        "url": "https://images.unsplash.com/photo-1723474314142-27e76e4e0c53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDkwNzh8MHwxfHNlYXJjaHwxfHxoaWtpbmclMjB0cmFpbCUyMG1vdW50YWluJTIwcGF0aCUyMHRyZWtraW5nJTIwYWR2ZW50dXJlfGVufDB8MHx8fDE3NjE1MjczNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-        "unsplash_url": "https://unsplash.com/photos/a-couple-of-people-with-backpacks-walking-up-a-hill-RP7HiaiE5Ac",
-        "description": "A couple of people with backpacks walking up a hill",
-        "color": "#a68c59"
-      },
-      "downloaded_at": "2025-10-27T01:09:11.149Z"
+      "photographer": "Alex Moliski",
+      "photographerUrl": "https://unsplash.com/@alexmoliski",
+      "unsplashUrl": "https://unsplash.com/photos/a-couple-of-people-with-backpacks-walking-up-a-hill-RP7HiaiE5Ac",
+      "description": "A couple of people with backpacks walking up a hill",
+      "color": "#a68c59"
     },
     "trajinar": {
       "filename": "trajinar.jpg",
-      "category": "synonym",
-      "photographer": {
-        "name": "Zoshua Colah",
-        "username": "zoshuacolah",
-        "profile_url": "https://unsplash.com/@zoshuacolah"
-      },
-      "photo": {
-        "id": "erlQAy-_Jpg",
-        "url": "https://images.unsplash.com/photo-1760791738231-06cfcadf7fdf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDkwNzh8MHwxfHNlYXJjaHwxfHxidXN5JTIwcGVyc29uJTIwd2Fsa2luZyUyMG1hcmtldCUyMHN0cmVldCUyMGJ1c3RsaW5nfGVufDB8MHx8fDE3NjE1MjczNTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-        "unsplash_url": "https://unsplash.com/photos/crowded-street-scene-at-night-with-people-and-vehicles-erlQAy-_Jpg",
-        "description": "Hello from the streets of Chandni Chowk, one of Delhi’s oldest and busiest marketplaces, filled with hand-pulled rickshaws and streams of people moving through narrow lanes. This photo is a part of a series of Black and White photos that I took to try to mimic the time of black and white film. I hope you like it and you find it useful in your next project.",
-        "color": "#262626"
-      },
-      "downloaded_at": "2025-10-27T01:09:14.628Z"
+      "photographer": "Zoshua Colah",
+      "photographerUrl": "https://unsplash.com/@zoshuacolah",
+      "unsplashUrl": "https://unsplash.com/photos/crowded-street-scene-at-night-with-people-and-vehicles-erlQAy-_Jpg",
+      "description": "Crowded street scene at night with people and vehicles",
+      "color": "#262626"
     },
     "rondar": {
       "filename": "rondar.jpg",
-      "category": "synonym",
-      "photographer": {
-        "name": "和国 谢",
-        "username": "guogete",
-        "profile_url": "https://unsplash.com/@guogete"
-      },
-      "photo": {
-        "id": "dPYy_IVUOoM",
-        "url": "https://images.unsplash.com/photo-1573120005733-32efb2e39bcd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDkwNzh8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjB3YWxraW5nJTIwbmlnaHQlMjBzdHJlZXQlMjBwYXRyb2wlMjB1cmJhbiUyMGRhcmt8ZW58MHwwfHx8MTc2MTUyNzM1NXww&ixlib=rb-4.1.0&q=80&w=1080",
-        "unsplash_url": "https://unsplash.com/photos/silhouette-of-person-near-buildings-dPYy_IVUOoM",
-        "description": "silhouette of person near buildings",
-        "color": "#260c0c"
-      },
-      "downloaded_at": "2025-10-27T01:09:18.621Z"
+      "photographer": "和国 谢",
+      "photographerUrl": "https://unsplash.com/@guogete",
+      "unsplashUrl": "https://unsplash.com/photos/silhouette-of-person-near-buildings-dPYy_IVUOoM",
+      "description": "Silhouette of person near buildings",
+      "color": "#260c0c"
     },
     "callejear": {
       "filename": "callejear.jpg",
-      "category": "synonym",
-      "photographer": {
-        "name": "MChe Lee",
-        "username": "mclee",
-        "profile_url": "https://unsplash.com/@mclee"
-      },
-      "photo": {
-        "id": "bSLt3k5OYmg",
-        "url": "https://images.unsplash.com/photo-1758952530469-238475a683ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDkwNzh8MHwxfHNlYXJjaHwxfHxuYXJyb3clMjBzdHJlZXQlMjBhbGxleSUyMHdhbGtpbmclMjBleHBsb3JhdGlvbiUyMGNvYmJsZXN0b25lfGVufDB8MHx8fDE3NjE1MjczNjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-        "unsplash_url": "https://unsplash.com/photos/cobblestone-street-lined-with-old-buildings-and-people-bSLt3k5OYmg",
-        "description": "Cobblestone street lined with old buildings and people",
-        "color": "#595959"
-      },
-      "downloaded_at": "2025-10-27T01:09:22.091Z"
+      "photographer": "MChe Lee",
+      "photographerUrl": "https://unsplash.com/@mclee",
+      "unsplashUrl": "https://unsplash.com/photos/cobblestone-street-lined-with-old-buildings-and-people-bSLt3k5OYmg",
+      "description": "Cobblestone street lined with old buildings and people",
+      "color": "#595959"
     },
     "vagabundear": {
       "filename": "vagabundear.jpg",
-      "category": "synonym",
-      "photographer": {
-        "name": "Ralf Sauter",
-        "username": "rlfstr",
-        "profile_url": "https://unsplash.com/@rlfstr"
-      },
-      "photo": {
-        "id": "GQKO218M21M",
-        "url": "https://images.unsplash.com/photo-1684086875755-4b0fed787c86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDkwNzh8MHwxfHNlYXJjaHwxfHx3YW5kZXJlciUyMGJhY2twYWNrJTIwdHJhdmVsZXIlMjByb2FkJTIwam91cm5leSUyMG5vbWFkfGVufDB8MHx8fDE3NjE1MjczNjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-        "unsplash_url": "https://unsplash.com/photos/a-brown-backpack-sitting-on-top-of-a-rock-GQKO218M21M",
-        "description": "Hill People Gear Umlindi v2 backpack.",
-        "color": "#d9c0a6"
-      },
-      "downloaded_at": "2025-10-27T01:09:24.939Z"
+      "photographer": "Ralf Sauter",
+      "photographerUrl": "https://unsplash.com/@rlfstr",
+      "unsplashUrl": "https://unsplash.com/photos/a-brown-backpack-sitting-on-top-of-a-rock-GQKO218M21M",
+      "description": "Hill People Gear Umlindi v2 backpack.",
+      "color": "#d9c0a6"
     },
     "errar": {
       "filename": "errar.jpg",
-      "category": "synonym",
-      "photographer": {
-        "name": "Annie Spratt",
-        "username": "anniespratt",
-        "profile_url": "https://unsplash.com/@anniespratt"
-      },
-      "photo": {
-        "id": "Scrwi76jtKg",
-        "url": "https://images.unsplash.com/photo-1629467201248-e625add6dd57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDkwNzh8MHwxfHNlYXJjaHwxfHxsb3N0JTIwcGVyc29uJTIwd2FuZGVyaW5nJTIwZW1wdHklMjBsYW5kc2NhcGUlMjBzb2xpdGFyeXxlbnwwfDB8fHwxNzYxNTI3MzY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-        "unsplash_url": "https://unsplash.com/photos/man-in-black-jacket-standing-on-brown-grass-field-during-daytime-Scrwi76jtKg",
-        "description": "man in black jacket standing on brown grass field during daytime",
-        "color": "#d9d9d9"
-      },
-      "downloaded_at": "2025-10-27T01:09:29.374Z"
+      "photographer": "Annie Spratt",
+      "photographerUrl": "https://unsplash.com/@anniespratt",
+      "unsplashUrl": "https://unsplash.com/photos/man-in-black-jacket-standing-on-brown-grass-field-during-daytime-Scrwi76jtKg",
+      "description": "Man in black jacket standing on brown grass field during daytime",
+      "color": "#d9d9d9"
     }
   }
 }
