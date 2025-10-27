@@ -341,23 +341,26 @@ function createCard(verb, index) {
   const credit = getImageCredit(verb.image);
 
   card.innerHTML = `
-    <div class="card-image" style="background-image: url('./assets/images/${verb.image}');">
+    <div class="card-image" style="background-image: url('${verb.image}');">
       <div class="image-credit" aria-hidden="true">${credit}</div>
     </div>
     <div class="card-content">
       <h2 class="verb-title">${verb.verb}</h2>
-      <p class="verb-translation">${verb.translation}</p>
+      <p class="verb-translation">${verb.quickDefinition}</p>
       <div class="verb-meta">
         <span class="formality-badge ${verb.formality}" aria-label="Formality: ${verb.formality}">
           ${verb.formality}
+        </span>
+        <span class="context-badge ${verb.context}" aria-label="Context: ${verb.context}">
+          ${verb.context}
         </span>
       </div>
       <button
         class="audio-button"
         aria-label="Play pronunciation for ${verb.verb}"
-        onclick="event.stopPropagation(); playAudio('${verb.audioPath}', this);">
+        onclick="event.stopPropagation(); playAudio('assets/audio/verbs/${verb.verb}.mp3', this);">
         <span class="audio-icon">🔊</span>
-        <span class="audio-text">Pronunciation</span>
+        <span class="audio-text">Pronunciar</span>
       </button>
     </div>
   `;
@@ -402,7 +405,7 @@ function openModal(index) {
 
   // Build modal content
   modalContent.innerHTML = `
-    <div class="modal-image" style="background-image: url('./assets/images/${verb.image}');">
+    <div class="modal-image" style="background-image: url('${verb.image}');">
       <div class="image-credit">${credit}</div>
     </div>
 
@@ -413,32 +416,37 @@ function openModal(index) {
         <button
           class="audio-button large"
           aria-label="Play pronunciation for ${verb.verb}"
-          onclick="playAudio('${verb.audioPath}', this);">
+          onclick="playAudio('assets/audio/verbs/${verb.verb}.mp3', this);">
           <span class="audio-icon">🔊</span>
-          <span class="audio-text">Play Pronunciation</span>
+          <span class="audio-text">Pronunciar</span>
         </button>
       </div>
 
       <div class="modal-section">
-        <h3>Translation</h3>
-        <p class="modal-translation">${verb.translation}</p>
-      </div>
-
-      <div class="modal-section">
-        <h3>Definition</h3>
+        <h3>Definición</h3>
         <p class="modal-definition">${verb.definition}</p>
       </div>
 
       <div class="modal-section">
-        <h3>Example Sentences</h3>
+        <h3>Ejemplos</h3>
         <ul class="example-list">
-          ${verb.examples.map(example => `
+          ${verb.examples.map((example, i) => `
             <li>
-              <p class="example-spanish">${highlightVerb(example.spanish, verb.verb)}</p>
-              <p class="example-english">${example.english}</p>
+              <p class="example-spanish">${highlightVerb(example, verb.verb)}</p>
+              <button
+                class="audio-button small"
+                aria-label="Play example ${i + 1}"
+                onclick="playAudio('assets/audio/examples/${verb.verb}_example_${i + 1}.mp3', this);">
+                <span class="audio-icon">🔊</span>
+              </button>
             </li>
           `).join('')}
         </ul>
+      </div>
+
+      <div class="modal-section">
+        <h3>Notas Culturales</h3>
+        <p class="modal-cultural">${verb.culturalNotes}</p>
       </div>
 
       <div class="modal-section">
