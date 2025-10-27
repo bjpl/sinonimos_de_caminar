@@ -42,118 +42,118 @@ VERB_VOICE_MAPPING = {
     'errar': 'co_female_1',
 }
 
-# Verb definitions with examples
+# Verb definitions with examples - MATCHING synonyms.json
 VERB_DATA = {
     'andar': {
-        'definition': 'moverse de un lugar a otro dando pasos',
+        'definition': 'moverse de un lugar a otro, ir o funcionar',
         'examples': [
-            'Me gusta andar por el parque cada mañana.',
-            'Los niños andan por toda la casa jugando.',
-            'Anda despacio porque el piso está mojado.'
+            '¿Cómo andas? —Ando buscando trabajo.',
+            'El reloj no anda bien desde que se cayó.',
+            'Ando muy cansado últimamente, necesito vacaciones.'
         ]
     },
     'pasear': {
-        'definition': 'caminar por placer o distracción',
+        'definition': 'caminar sin prisa por placer o recreación',
         'examples': [
-            'Vamos a pasear por la playa al atardecer.',
-            'Me encanta pasear con mi perro los domingos.',
-            'Ella pasea por el centro comercial cada tarde.'
+            'Nos gusta pasear por la playa al atardecer.',
+            'Cada domingo saco a pasear al perro en el parque del barrio.',
+            'Paseamos por el centro histórico sin ningún apuro.'
         ]
     },
     'deambular': {
-        'definition': 'andar sin rumbo fijo',
+        'definition': 'vagar sin rumbo fijo o dirección clara',
         'examples': [
-            'Deambulé por las calles sin saber a dónde ir.',
-            'Los turistas deambulan por la ciudad antigua.',
-            'Me gusta deambular por librerías los sábados.'
+            'Deambulaba por las calles del barrio viejo, perdido en sus recuerdos.',
+            'Los pacientes pueden deambular libremente por esta área del hospital.',
+            'Después de la noticia, salió a deambular sin rumbo fijo por la ciudad.'
         ]
     },
     'vagar': {
-        'definition': 'andar de un lugar a otro sin destino determinado',
+        'definition': 'andar errante sin destino ni propósito fijo',
         'examples': [
-            'Vagó por el bosque durante horas.',
-            'Sus pensamientos vagan sin dirección clara.',
-            'El gato vaga por el vecindario todas las noches.'
+            'Vagó por el mundo durante años, buscando algo que nunca encontró.',
+            'Su mente vagaba mientras miraba por la ventana del tren.',
+            'Vagaban de pueblo en pueblo, sin establecerse en ningún lugar.'
         ]
     },
     'transitar': {
-        'definition': 'pasar o circular por un lugar',
+        'definition': 'pasar por un lugar, circular por una vía',
         'examples': [
-            'Muchos autos transitan por esta avenida.',
-            'Es peligroso transitar por esa zona de noche.',
-            'Los peatones transitan con cuidado en la intersección.'
+            'Está prohibido transitar por esta zona durante las obras.',
+            'Los peatones pueden transitar libremente por el paseo marítimo.',
+            'Vehículos pesados no pueden transitar por el centro histórico.'
         ]
     },
     'peregrinar': {
-        'definition': 'viajar a un lugar sagrado o importante',
+        'definition': 'hacer una peregrinación con propósito espiritual',
         'examples': [
-            'Miles peregrinar al santuario cada año.',
-            'Peregrinaron durante semanas para llegar.',
-            'Quiero peregrinar por el Camino de Santiago.'
+            'Miles de fieles peregrinan cada año a la Basílica de Guadalupe.',
+            'Peregrinó durante meses por el Camino de Santiago.',
+            'Peregrinar por la vida en busca de la verdad es una tarea noble.'
         ]
     },
     'desplazarse': {
-        'definition': 'moverse de un lugar a otro',
+        'definition': 'moverse o trasladarse de un lugar a otro',
         'examples': [
-            'Me desplazo al trabajo en bicicleta.',
-            'Los animales se desplazan en busca de agua.',
-            'Es difícil desplazarse por la ciudad en hora pico.'
+            'Me desplazo al trabajo en metro porque hay mucho tráfico.',
+            'La población se vio obligada a desplazarse debido al conflicto.',
+            '¿Cómo te desplazas por la ciudad normalmente?'
         ]
     },
     'circular': {
-        'definition': 'moverse por un espacio o ruta',
+        'definition': 'moverse por un área, transitar o fluir',
         'examples': [
-            'Los autobuses circulan cada diez minutos.',
-            'Está prohibido circular en sentido contrario.',
-            'La sangre circula por todo el cuerpo.'
+            'Los vehículos no pueden circular por esta calle los domingos.',
+            'La sangre circula por todo el cuerpo a través de las venas.',
+            'Circulan muchos rumores sobre la renuncia del director.'
         ]
     },
     'recorrer': {
-        'definition': 'atravesar o visitar un lugar',
+        'definition': 'atravesar o cubrir una distancia o área',
         'examples': [
-            'Recorrimos toda Europa en verano.',
-            'Me encanta recorrer mercados locales.',
-            'El guía recorre el museo explicando cada sala.'
+            'Recorrimos toda la ciudad en un solo día, ¡estamos agotados!',
+            'El río recorre cientos de kilómetros hasta llegar al mar.',
+            'Recorrió la casa con la mirada, buscando algún cambio.'
         ]
     },
     'trajinar': {
-        'definition': 'moverse de un lado a otro con actividad',
+        'definition': 'andar atareado llevando cosas o haciendo diligencias',
         'examples': [
-            'Trajina todo el día entre la oficina y reuniones.',
-            'Los meseros trajinan sin parar durante el servicio.',
-            'Trajinamos preparando la fiesta hasta la madrugada.'
+            'He estado trajinando todo el día con los preparativos de la fiesta.',
+            'Mi abuela trajina en la cocina desde temprano en la mañana.',
+            'Los trabajadores trajinaban de un lado a otro, cargando cajas.'
         ]
     },
     'rondar': {
-        'definition': 'dar vueltas alrededor de un lugar',
+        'definition': 'patrullar, merodear o estar alrededor de un área',
         'examples': [
-            'Un extraño ronda la casa por las noches.',
-            'Los tiburones rondan cerca de la costa.',
-            'Ronda la misma idea en mi cabeza constantemente.'
+            'El vigilante ronda el edificio cada hora durante la noche.',
+            'Había un hombre sospechoso rondando la tienda desde hace rato.',
+            'Los precios de las casas en este barrio rondan el millón de dólares.'
         ]
     },
     'callejear': {
-        'definition': 'andar por las calles sin propósito definido',
+        'definition': 'vagar por las calles sin destino particular',
         'examples': [
-            'Pasamos la tarde callejeando por el barrio viejo.',
-            'Me gusta callejear y descubrir nuevos lugares.',
-            'Los adolescentes callejean hasta tarde los fines de semana.'
+            'Nos gusta callejear por el centro histórico los fines de semana.',
+            'Pasé la tarde callejeando, viendo las vitrinas y la gente.',
+            'Callejeando por el barrio descubrí un café increíble.'
         ]
     },
     'vagabundear': {
-        'definition': 'andar errante sin ocupación fija',
+        'definition': 'vagar como vagabundo, vivir estilo errante',
         'examples': [
-            'Decidió vagabundear por el mundo durante un año.',
-            'No me gusta vagabundear sin un plan claro.',
-            'Pasó meses vagabundeando de ciudad en ciudad.'
+            'Después de perder su trabajo, pasó meses vagabundeando por las calles.',
+            'Me gusta vagabundear por los mercados de pulgas, nunca sabes qué vas a encontrar.',
+            'En su juventud vagabundeó por toda Europa con una mochila y una guitarra.'
         ]
     },
     'errar': {
-        'definition': 'andar vagando de un lugar a otro',
+        'definition': 'equivocarse; vagar o errar',
         'examples': [
-            'Erraba por las calles sin encontrar su camino.',
-            'Su mirada erraba por el horizonte pensativa.',
-            'Los nómadas erran por el desierto buscando oasis.'
+            'Erraba por los campos como alma en pena, buscando redención.',
+            'Como Ulises, erró durante años antes de hallar su hogar.',
+            'Si he errado en mi juicio, pido disculpas.'
         ]
     },
 }
@@ -164,8 +164,8 @@ class AudioGenerator:
 
     def __init__(self, base_path: str):
         self.base_path = Path(base_path)
-        self.verbs_dir = self.base_path / 'src' / 'assets' / 'audio' / 'verbs'
-        self.examples_dir = self.base_path / 'src' / 'assets' / 'audio' / 'examples'
+        self.verbs_dir = self.base_path / 'assets' / 'audio' / 'verbs'
+        self.examples_dir = self.base_path / 'assets' / 'audio' / 'examples'
         self.metadata: Dict = {
             'generated_at': datetime.now().isoformat(),
             'total_files': 0,
@@ -288,7 +288,7 @@ class AudioGenerator:
         self.metadata['failed_verbs'] = failed_verbs
 
         # Save metadata
-        metadata_file = self.base_path / 'src' / 'assets' / 'audio' / 'audio_metadata.json'
+        metadata_file = self.base_path / 'data' / 'audio_metadata.json'
         with open(metadata_file, 'w', encoding='utf-8') as f:
             json.dump(self.metadata, f, indent=2, ensure_ascii=False)
 

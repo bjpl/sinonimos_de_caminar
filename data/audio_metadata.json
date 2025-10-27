@@ -22,52 +22,52 @@
     },
     "transitar": {
       "file": "assets/audio/verbs/transitar.mp3",
-      "voice": "co_female_1",
+      "voice": "us_female_1",
       "text": "transitar"
     },
     "peregrinar": {
       "file": "assets/audio/verbs/peregrinar.mp3",
-      "voice": "ar_male_1",
+      "voice": "co_female_1",
       "text": "peregrinar"
     },
     "desplazarse": {
       "file": "assets/audio/verbs/desplazarse.mp3",
-      "voice": "us_female_1",
+      "voice": "ar_male_1",
       "text": "desplazarse"
     },
     "circular": {
       "file": "assets/audio/verbs/circular.mp3",
-      "voice": "mx_female_1",
+      "voice": "us_male_1",
       "text": "circular"
     },
     "recorrer": {
       "file": "assets/audio/verbs/recorrer.mp3",
-      "voice": "co_male_1",
+      "voice": "mx_female_1",
       "text": "recorrer"
     },
     "trajinar": {
       "file": "assets/audio/verbs/trajinar.mp3",
-      "voice": "ar_female_1",
+      "voice": "co_male_1",
       "text": "trajinar"
     },
     "rondar": {
       "file": "assets/audio/verbs/rondar.mp3",
-      "voice": "mx_male_1",
+      "voice": "ar_female_1",
       "text": "rondar"
     },
     "callejear": {
       "file": "assets/audio/verbs/callejear.mp3",
-      "voice": "co_female_1",
+      "voice": "mx_male_1",
       "text": "callejear"
     },
     "vagabundear": {
       "file": "assets/audio/verbs/vagabundear.mp3",
-      "voice": "ar_male_1",
+      "voice": "us_female_1",
       "text": "vagabundear"
     },
     "errar": {
       "file": "assets/audio/verbs/errar.mp3",
-      "voice": "us_female_1",
+      "voice": "co_female_1",
       "text": "errar"
     }
   },
