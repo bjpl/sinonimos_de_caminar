@@ -1,336 +1,272 @@
 {
-  "generated_at": "2025-10-26T18:10:24.089680",
-  "total_files": 56,
-  "voices_used": [
-    "mx_female_1",
-    "co_male_1",
-    "ar_female_1",
-    "mx_male_1",
-    "us_female_1",
-    "co_female_1",
-    "ar_male_1",
-    "us_male_1"
-  ],
-  "voice_details": {
-    "mx_female_1": "es-MX-DaliaNeural",
-    "co_male_1": "es-CO-GonzaloNeural",
-    "ar_female_1": "es-AR-ElenaNeural",
-    "mx_male_1": "es-MX-JorgeNeural",
-    "us_female_1": "es-US-PalomaNeural",
-    "co_female_1": "es-CO-SalomeNeural",
-    "ar_male_1": "es-AR-TomasNeural",
-    "us_male_1": "es-US-AlonsoNeural"
-  },
   "verbs": {
     "andar": {
+      "file": "assets/audio/verbs/andar.mp3",
       "voice": "mx_female_1",
-      "voice_name": "es-MX-DaliaNeural",
-      "files": {
-        "verb": "src\\assets\\audio\\verbs\\andar.mp3",
-        "examples": [
-          {
-            "file": "src\\assets\\audio\\examples\\andar_example_1.mp3",
-            "text": "Me gusta andar por el parque cada mañana."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\andar_example_2.mp3",
-            "text": "Los niños andan por toda la casa jugando."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\andar_example_3.mp3",
-            "text": "Anda despacio porque el piso está mojado."
-          }
-        ]
-      },
-      "success": true
+      "text": "andar"
     },
     "pasear": {
+      "file": "assets/audio/verbs/pasear.mp3",
       "voice": "co_male_1",
-      "voice_name": "es-CO-GonzaloNeural",
-      "files": {
-        "verb": "src\\assets\\audio\\verbs\\pasear.mp3",
-        "examples": [
-          {
-            "file": "src\\assets\\audio\\examples\\pasear_example_1.mp3",
-            "text": "Vamos a pasear por la playa al atardecer."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\pasear_example_2.mp3",
-            "text": "Me encanta pasear con mi perro los domingos."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\pasear_example_3.mp3",
-            "text": "Ella pasea por el centro comercial cada tarde."
-          }
-        ]
-      },
-      "success": true
+      "text": "pasear"
     },
     "deambular": {
+      "file": "assets/audio/verbs/deambular.mp3",
       "voice": "ar_female_1",
-      "voice_name": "es-AR-ElenaNeural",
-      "files": {
-        "verb": "src\\assets\\audio\\verbs\\deambular.mp3",
-        "examples": [
-          {
-            "file": "src\\assets\\audio\\examples\\deambular_example_1.mp3",
-            "text": "Deambulé por las calles sin saber a dónde ir."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\deambular_example_2.mp3",
-            "text": "Los turistas deambulan por la ciudad antigua."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\deambular_example_3.mp3",
-            "text": "Me gusta deambular por librerías los sábados."
-          }
-        ]
-      },
-      "success": true
+      "text": "deambular"
     },
     "vagar": {
+      "file": "assets/audio/verbs/vagar.mp3",
       "voice": "mx_male_1",
-      "voice_name": "es-MX-JorgeNeural",
-      "files": {
-        "verb": "src\\assets\\audio\\verbs\\vagar.mp3",
-        "examples": [
-          {
-            "file": "src\\assets\\audio\\examples\\vagar_example_1.mp3",
-            "text": "Vagó por el bosque durante horas."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\vagar_example_2.mp3",
-            "text": "Sus pensamientos vagan sin dirección clara."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\vagar_example_3.mp3",
-            "text": "El gato vaga por el vecindario todas las noches."
-          }
-        ]
-      },
-      "success": true
+      "text": "vagar"
     },
     "transitar": {
-      "voice": "us_female_1",
-      "voice_name": "es-US-PalomaNeural",
-      "files": {
-        "verb": "src\\assets\\audio\\verbs\\transitar.mp3",
-        "examples": [
-          {
-            "file": "src\\assets\\audio\\examples\\transitar_example_1.mp3",
-            "text": "Muchos autos transitan por esta avenida."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\transitar_example_2.mp3",
-            "text": "Es peligroso transitar por esa zona de noche."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\transitar_example_3.mp3",
-            "text": "Los peatones transitan con cuidado en la intersección."
-          }
-        ]
-      },
-      "success": true
+      "file": "assets/audio/verbs/transitar.mp3",
+      "voice": "co_female_1",
+      "text": "transitar"
     },
     "peregrinar": {
-      "voice": "co_female_1",
-      "voice_name": "es-CO-SalomeNeural",
-      "files": {
-        "verb": "src\\assets\\audio\\verbs\\peregrinar.mp3",
-        "examples": [
-          {
-            "file": "src\\assets\\audio\\examples\\peregrinar_example_1.mp3",
-            "text": "Miles peregrinar al santuario cada año."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\peregrinar_example_2.mp3",
-            "text": "Peregrinaron durante semanas para llegar."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\peregrinar_example_3.mp3",
-            "text": "Quiero peregrinar por el Camino de Santiago."
-          }
-        ]
-      },
-      "success": true
+      "file": "assets/audio/verbs/peregrinar.mp3",
+      "voice": "ar_male_1",
+      "text": "peregrinar"
     },
     "desplazarse": {
-      "voice": "ar_male_1",
-      "voice_name": "es-AR-TomasNeural",
-      "files": {
-        "verb": "src\\assets\\audio\\verbs\\desplazarse.mp3",
-        "examples": [
-          {
-            "file": "src\\assets\\audio\\examples\\desplazarse_example_1.mp3",
-            "text": "Me desplazo al trabajo en bicicleta."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\desplazarse_example_2.mp3",
-            "text": "Los animales se desplazan en busca de agua."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\desplazarse_example_3.mp3",
-            "text": "Es difícil desplazarse por la ciudad en hora pico."
-          }
-        ]
-      },
-      "success": true
+      "file": "assets/audio/verbs/desplazarse.mp3",
+      "voice": "us_female_1",
+      "text": "desplazarse"
     },
     "circular": {
-      "voice": "us_male_1",
-      "voice_name": "es-US-AlonsoNeural",
-      "files": {
-        "verb": "src\\assets\\audio\\verbs\\circular.mp3",
-        "examples": [
-          {
-            "file": "src\\assets\\audio\\examples\\circular_example_1.mp3",
-            "text": "Los autobuses circulan cada diez minutos."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\circular_example_2.mp3",
-            "text": "Está prohibido circular en sentido contrario."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\circular_example_3.mp3",
-            "text": "La sangre circula por todo el cuerpo."
-          }
-        ]
-      },
-      "success": true
+      "file": "assets/audio/verbs/circular.mp3",
+      "voice": "mx_female_1",
+      "text": "circular"
     },
     "recorrer": {
-      "voice": "mx_female_1",
-      "voice_name": "es-MX-DaliaNeural",
-      "files": {
-        "verb": "src\\assets\\audio\\verbs\\recorrer.mp3",
-        "examples": [
-          {
-            "file": "src\\assets\\audio\\examples\\recorrer_example_1.mp3",
-            "text": "Recorrimos toda Europa en verano."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\recorrer_example_2.mp3",
-            "text": "Me encanta recorrer mercados locales."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\recorrer_example_3.mp3",
-            "text": "El guía recorre el museo explicando cada sala."
-          }
-        ]
-      },
-      "success": true
+      "file": "assets/audio/verbs/recorrer.mp3",
+      "voice": "co_male_1",
+      "text": "recorrer"
     },
     "trajinar": {
-      "voice": "co_male_1",
-      "voice_name": "es-CO-GonzaloNeural",
-      "files": {
-        "verb": "src\\assets\\audio\\verbs\\trajinar.mp3",
-        "examples": [
-          {
-            "file": "src\\assets\\audio\\examples\\trajinar_example_1.mp3",
-            "text": "Trajina todo el día entre la oficina y reuniones."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\trajinar_example_2.mp3",
-            "text": "Los meseros trajinan sin parar durante el servicio."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\trajinar_example_3.mp3",
-            "text": "Trajinamos preparando la fiesta hasta la madrugada."
-          }
-        ]
-      },
-      "success": true
+      "file": "assets/audio/verbs/trajinar.mp3",
+      "voice": "ar_female_1",
+      "text": "trajinar"
     },
     "rondar": {
-      "voice": "ar_female_1",
-      "voice_name": "es-AR-ElenaNeural",
-      "files": {
-        "verb": "src\\assets\\audio\\verbs\\rondar.mp3",
-        "examples": [
-          {
-            "file": "src\\assets\\audio\\examples\\rondar_example_1.mp3",
-            "text": "Un extraño ronda la casa por las noches."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\rondar_example_2.mp3",
-            "text": "Los tiburones rondan cerca de la costa."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\rondar_example_3.mp3",
-            "text": "Ronda la misma idea en mi cabeza constantemente."
-          }
-        ]
-      },
-      "success": true
+      "file": "assets/audio/verbs/rondar.mp3",
+      "voice": "mx_male_1",
+      "text": "rondar"
     },
     "callejear": {
-      "voice": "mx_male_1",
-      "voice_name": "es-MX-JorgeNeural",
-      "files": {
-        "verb": "src\\assets\\audio\\verbs\\callejear.mp3",
-        "examples": [
-          {
-            "file": "src\\assets\\audio\\examples\\callejear_example_1.mp3",
-            "text": "Pasamos la tarde callejeando por el barrio viejo."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\callejear_example_2.mp3",
-            "text": "Me gusta callejear y descubrir nuevos lugares."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\callejear_example_3.mp3",
-            "text": "Los adolescentes callejean hasta tarde los fines de semana."
-          }
-        ]
-      },
-      "success": true
+      "file": "assets/audio/verbs/callejear.mp3",
+      "voice": "co_female_1",
+      "text": "callejear"
     },
     "vagabundear": {
-      "voice": "us_female_1",
-      "voice_name": "es-US-PalomaNeural",
-      "files": {
-        "verb": "src\\assets\\audio\\verbs\\vagabundear.mp3",
-        "examples": [
-          {
-            "file": "src\\assets\\audio\\examples\\vagabundear_example_1.mp3",
-            "text": "Decidió vagabundear por el mundo durante un año."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\vagabundear_example_2.mp3",
-            "text": "No me gusta vagabundear sin un plan claro."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\vagabundear_example_3.mp3",
-            "text": "Pasó meses vagabundeando de ciudad en ciudad."
-          }
-        ]
-      },
-      "success": true
+      "file": "assets/audio/verbs/vagabundear.mp3",
+      "voice": "ar_male_1",
+      "text": "vagabundear"
     },
     "errar": {
-      "voice": "co_female_1",
-      "voice_name": "es-CO-SalomeNeural",
-      "files": {
-        "verb": "src\\assets\\audio\\verbs\\errar.mp3",
-        "examples": [
-          {
-            "file": "src\\assets\\audio\\examples\\errar_example_1.mp3",
-            "text": "Erraba por las calles sin encontrar su camino."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\errar_example_2.mp3",
-            "text": "Su mirada erraba por el horizonte pensativa."
-          },
-          {
-            "file": "src\\assets\\audio\\examples\\errar_example_3.mp3",
-            "text": "Los nómadas erran por el desierto buscando oasis."
-          }
-        ]
-      },
-      "success": true
+      "file": "assets/audio/verbs/errar.mp3",
+      "voice": "us_female_1",
+      "text": "errar"
     }
   },
-  "successful_verbs": 14,
-  "failed_verbs": []
+  "examples": {
+    "andar": [
+      {
+        "file": "assets/audio/examples/andar_example_1.mp3",
+        "text": "¿Cómo andas? —Ando buscando trabajo."
+      },
+      {
+        "file": "assets/audio/examples/andar_example_2.mp3",
+        "text": "El reloj no anda bien desde que se cayó."
+      },
+      {
+        "file": "assets/audio/examples/andar_example_3.mp3",
+        "text": "Ando muy cansado últimamente, necesito vacaciones."
+      }
+    ],
+    "pasear": [
+      {
+        "file": "assets/audio/examples/pasear_example_1.mp3",
+        "text": "Nos gusta pasear por la playa al atardecer."
+      },
+      {
+        "file": "assets/audio/examples/pasear_example_2.mp3",
+        "text": "Cada domingo saco a pasear al perro en el parque del barrio."
+      },
+      {
+        "file": "assets/audio/examples/pasear_example_3.mp3",
+        "text": "Paseamos por el centro histórico sin ningún apuro."
+      }
+    ],
+    "deambular": [
+      {
+        "file": "assets/audio/examples/deambular_example_1.mp3",
+        "text": "Deambulaba por las calles del barrio viejo, perdido en sus recuerdos."
+      },
+      {
+        "file": "assets/audio/examples/deambular_example_2.mp3",
+        "text": "Los pacientes pueden deambular libremente por esta área del hospital."
+      },
+      {
+        "file": "assets/audio/examples/deambular_example_3.mp3",
+        "text": "Después de la noticia, salió a deambular sin rumbo fijo por la ciudad."
+      }
+    ],
+    "vagar": [
+      {
+        "file": "assets/audio/examples/vagar_example_1.mp3",
+        "text": "Vagó por el mundo durante años, buscando algo que nunca encontró."
+      },
+      {
+        "file": "assets/audio/examples/vagar_example_2.mp3",
+        "text": "Su mente vagaba mientras miraba por la ventana del tren."
+      },
+      {
+        "file": "assets/audio/examples/vagar_example_3.mp3",
+        "text": "Vagaban de pueblo en pueblo, sin establecerse en ningún lugar."
+      }
+    ],
+    "transitar": [
+      {
+        "file": "assets/audio/examples/transitar_example_1.mp3",
+        "text": "Está prohibido transitar por esta zona durante las obras."
+      },
+      {
+        "file": "assets/audio/examples/transitar_example_2.mp3",
+        "text": "Los peatones pueden transitar libremente por el paseo marítimo."
+      },
+      {
+        "file": "assets/audio/examples/transitar_example_3.mp3",
+        "text": "Vehículos pesados no pueden transitar por el centro histórico."
+      }
+    ],
+    "peregrinar": [
+      {
+        "file": "assets/audio/examples/peregrinar_example_1.mp3",
+        "text": "Miles de fieles peregrinan cada año a la Basílica de Guadalupe."
+      },
+      {
+        "file": "assets/audio/examples/peregrinar_example_2.mp3",
+        "text": "Peregrinó durante meses por el Camino de Santiago."
+      },
+      {
+        "file": "assets/audio/examples/peregrinar_example_3.mp3",
+        "text": "Peregrinar por la vida en busca de la verdad es una tarea noble."
+      }
+    ],
+    "desplazarse": [
+      {
+        "file": "assets/audio/examples/desplazarse_example_1.mp3",
+        "text": "Me desplazo al trabajo en metro porque hay mucho tráfico."
+      },
+      {
+        "file": "assets/audio/examples/desplazarse_example_2.mp3",
+        "text": "La población se vio obligada a desplazarse debido al conflicto."
+      },
+      {
+        "file": "assets/audio/examples/desplazarse_example_3.mp3",
+        "text": "¿Cómo te desplazas por la ciudad normalmente?"
+      }
+    ],
+    "circular": [
+      {
+        "file": "assets/audio/examples/circular_example_1.mp3",
+        "text": "Los vehículos no pueden circular por esta calle los domingos."
+      },
+      {
+        "file": "assets/audio/examples/circular_example_2.mp3",
+        "text": "La sangre circula por todo el cuerpo a través de las venas."
+      },
+      {
+        "file": "assets/audio/examples/circular_example_3.mp3",
+        "text": "Circulan muchos rumores sobre la renuncia del director."
+      }
+    ],
+    "recorrer": [
+      {
+        "file": "assets/audio/examples/recorrer_example_1.mp3",
+        "text": "Recorrimos toda la ciudad en un solo día, ¡estamos agotados!"
+      },
+      {
+        "file": "assets/audio/examples/recorrer_example_2.mp3",
+        "text": "El río recorre cientos de kilómetros hasta llegar al mar."
+      },
+      {
+        "file": "assets/audio/examples/recorrer_example_3.mp3",
+        "text": "Recorrió la casa con la mirada, buscando algún cambio."
+      }
+    ],
+    "trajinar": [
+      {
+        "file": "assets/audio/examples/trajinar_example_1.mp3",
+        "text": "He estado trajinando todo el día con los preparativos de la fiesta."
+      },
+      {
+        "file": "assets/audio/examples/trajinar_example_2.mp3",
+        "text": "Mi abuela trajina en la cocina desde temprano en la mañana."
+      },
+      {
+        "file": "assets/audio/examples/trajinar_example_3.mp3",
+        "text": "Los trabajadores trajinaban de un lado a otro, cargando cajas."
+      }
+    ],
+    "rondar": [
+      {
+        "file": "assets/audio/examples/rondar_example_1.mp3",
+        "text": "El vigilante ronda el edificio cada hora durante la noche."
+      },
+      {
+        "file": "assets/audio/examples/rondar_example_2.mp3",
+        "text": "Había un hombre sospechoso rondando la tienda desde hace rato."
+      },
+      {
+        "file": "assets/audio/examples/rondar_example_3.mp3",
+        "text": "Los precios de las casas en este barrio rondan el millón de dólares."
+      }
+    ],
+    "callejear": [
+      {
+        "file": "assets/audio/examples/callejear_example_1.mp3",
+        "text": "Nos gusta callejear por el centro histórico los fines de semana."
+      },
+      {
+        "file": "assets/audio/examples/callejear_example_2.mp3",
+        "text": "Pasé la tarde callejeando, viendo las vitrinas y la gente."
+      },
+      {
+        "file": "assets/audio/examples/callejear_example_3.mp3",
+        "text": "Callejeando por el barrio descubrí un café increíble."
+      }
+    ],
+    "vagabundear": [
+      {
+        "file": "assets/audio/examples/vagabundear_example_1.mp3",
+        "text": "Después de perder su trabajo, pasó meses vagabundeando por las calles."
+      },
+      {
+        "file": "assets/audio/examples/vagabundear_example_2.mp3",
+        "text": "Me gusta vagabundear por los mercados de pulgas, nunca sabes qué vas a encontrar."
+      },
+      {
+        "file": "assets/audio/examples/vagabundear_example_3.mp3",
+        "text": "En su juventud vagabundeó por toda Europa con una mochila y una guitarra."
+      }
+    ],
+    "errar": [
+      {
+        "file": "assets/audio/examples/errar_example_1.mp3",
+        "text": "Erraba por los campos como alma en pena, buscando redención."
+      },
+      {
+        "file": "assets/audio/examples/errar_example_2.mp3",
+        "text": "Como Ulises, erró durante años antes de hallar su hogar."
+      },
+      {
+        "file": "assets/audio/examples/errar_example_3.mp3",
+        "text": "Si he errado en mi juicio, pido disculpas."
+      }
+    ]
+  }
 }

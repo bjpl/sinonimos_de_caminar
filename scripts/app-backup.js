@@ -1,5 +1,5 @@
 /**
- * Sinónimos de Caminar - Main Application
+ * Sinónimos de Ver - Main Application
  * Uses local images (no API calls needed)
  */
 
@@ -58,8 +58,8 @@ async function loadData() {
 function loadHeroImage() {
     const heroImage = document.getElementById('hero-image');
     if (heroImage) {
-        heroImage.src = 'assets/images/hero/hero-walking.jpg';
-        heroImage.alt = 'Caminar por el mundo - Sinónimos en español';
+        heroImage.src = 'assets/images/hero/hero.jpg';
+        heroImage.alt = 'Ver el mundo - Sinónimos en español';
     }
 }
 
