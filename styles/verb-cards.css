@@ -1,0 +1,200 @@
+/* ===================================
+   Verb Cards Styling
+   =================================== */
+
+/* Verb Card Container */
+.verb-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.verb-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image */
+.card-image {
+  width: 100%;
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Remove image credit from cards (keep only in modal) */
+.card-image .image-credit {
+  display: none;
+}
+
+/* Card Content */
+.card-content {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Verb Title - HIGH CONTRAST */
+.verb-title {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1410;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Verb Translation */
+.verb-translation {
+  font-size: 15px;
+  color: #4a4237;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Verb Meta (Badges Container) */
+.verb-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+/* Badge Styling */
+.formality-badge,
+.context-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Formality Badges */
+.formality-badge.formal {
+  background-color: #2d5016;
+  color: white;
+}
+
+.formality-badge.neutral {
+  background-color: #6b5d4f;
+  color: white;
+}
+
+.formality-badge.informal {
+  background-color: #8b4513;
+  color: white;
+}
+
+/* Context Badges */
+.context-badge.cotidiano {
+  background-color: #5d7c3e;
+  color: white;
+}
+
+.context-badge.literario {
+  background-color: #4a3728;
+  color: white;
+}
+
+.context-badge.profesional {
+  background-color: #3d5a7a;
+  color: white;
+}
+
+.context-badge.narrativo {
+  background-color: #7a5a3d;
+  color: white;
+}
+
+/* Audio Button - MUCH BETTER VISIBILITY */
+.audio-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background-color: #3d2e1f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 12px;
+}
+
+.audio-button:hover {
+  background-color: #2a1f15;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.audio-button:active {
+  transform: translateY(0);
+}
+
+.audio-icon {
+  font-size: 18px;
+}
+
+.audio-text {
+  color: white;
+  font-weight: 600;
+}
+
+/* Grid Layout */
+#cards-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  #cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  #cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  #cards-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* No Results State */
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6b5d4f;
+}
+
+.no-results h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #3d2e1f;
+}
+
+.no-results p {
+  font-size: 16px;
+  color: #6b5d4f;
+}
