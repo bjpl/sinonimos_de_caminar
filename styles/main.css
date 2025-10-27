@@ -799,6 +799,13 @@ body {
     gap: 0.5rem;
 }
 
+.example-text {
+    flex: 1;
+    min-width: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
 .example-item::before {
     content: '→';
     position: absolute;

@@ -342,7 +342,7 @@ function openModal(synonym) {
                         </svg>
                     </button>
                 ` : '';
-                return `<li class="example-item">${highlightVerb(example, synonym.verb)}${audioButton}</li>`;
+                return `<li class="example-item"><span class="example-text">${highlightVerb(example, synonym.verb)}</span>${audioButton}</li>`;
             })
             .join('');
     }
