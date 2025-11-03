@@ -101,30 +101,40 @@ function initializeApp() {
  * Set up all event listeners for the application
  */
 function setupEventListeners() {
-  // Search input with debouncing
+  // Search input with debouncing and sanitization
   const searchInput = document.getElementById('search-input');
   if (searchInput) {
     searchInput.addEventListener('input', debounce((e) => {
-      state.filters.search = e.target.value.trim();
+      // Sanitize search input
+      const sanitized = e.target.value.trim()
+        .replace(/[<>]/g, '') // Remove potential HTML tags
+        .substring(0, 100); // Limit length
+      state.filters.search = sanitized;
       applyFilters();
     }, 300));
   }
 
-  // Formality filter
+  // Formality filter with validation
   const formalityFilter = document.getElementById('formality-filter');
   if (formalityFilter) {
     formalityFilter.addEventListener('change', (e) => {
-      state.filters.formality = e.target.value;
-      applyFilters();
+      const validValues = ['all', 'formal', 'neutral'];
+      if (validValues.includes(e.target.value)) {
+        state.filters.formality = e.target.value;
+        applyFilters();
+      }
     });
   }
 
-  // Context filter
+  // Context filter with validation
   const contextFilter = document.getElementById('context-filter');
   if (contextFilter) {
     contextFilter.addEventListener('change', (e) => {
-      state.filters.context = e.target.value;
-      applyFilters();
+      const validValues = ['all', 'cotidiano', 'literario', 'narrativo', 'profesional'];
+      if (validValues.includes(e.target.value)) {
+        state.filters.context = e.target.value;
+        applyFilters();
+      }
     });
   }
 
@@ -134,20 +144,22 @@ function setupEventListeners() {
     resetButton.addEventListener('click', resetFilters);
   }
 
+  // Explore button (hero CTA)
+  const exploreButton = document.getElementById('explore-button');
+  if (exploreButton) {
+    exploreButton.addEventListener('click', scrollToContent);
+  }
+
   // Modal close button
-  const closeButton = document.getElementById('close-modal');
+  const closeButton = document.getElementById('modal-close-button');
   if (closeButton) {
     closeButton.addEventListener('click', closeModal);
   }
 
-  // Modal overlay click
-  const modal = document.getElementById('verb-modal');
-  if (modal) {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        closeModal();
-      }
-    });
+  // Modal backdrop click
+  const modalBackdrop = document.getElementById('modal-backdrop');
+  if (modalBackdrop) {
+    modalBackdrop.addEventListener('click', closeModal);
   }
 
   // Keyboard shortcuts
@@ -341,34 +353,61 @@ function createCard(verb, index) {
   card.dataset.verbIndex = index;
   card.setAttribute('tabindex', '0');
   card.setAttribute('role', 'button');
-  card.setAttribute('aria-label', `${verb.verb} - ${verb.translation}. Click for details.`);
+  card.setAttribute('aria-label', `${sanitizeText(verb.verb)} - ${sanitizeText(verb.translation)}. Click for details.`);
 
-  // Get image credit
-  const credit = getImageCredit(verb.image);
+  // Create card structure using safe DOM methods
+  const cardImage = document.createElement('div');
+  cardImage.className = 'card-image';
+  cardImage.style.backgroundImage = `url('${sanitizeText(verb.image)}')`;
 
-  card.innerHTML = `
-    <div class="card-image" style="background-image: url('${verb.image}');">
-    </div>
-    <div class="card-content">
-      <h2 class="verb-title">${verb.verb}</h2>
-      <p class="verb-translation">${verb.quickDefinition}</p>
-      <div class="verb-meta">
-        <span class="formality-badge ${verb.formality}" aria-label="Formality: ${verb.formality}">
-          ${verb.formality}
-        </span>
-        <span class="context-badge ${verb.context}" aria-label="Context: ${verb.context}">
-          ${verb.context}
-        </span>
-      </div>
-      <button
-        class="audio-button"
-        aria-label="Play pronunciation for ${verb.verb}"
-        onclick="event.stopPropagation(); playAudio('assets/audio/verbs/${verb.verb}.mp3', this);">
-        <span class="audio-icon">🔊</span>
-        <span class="audio-text">Pronunciar</span>
-      </button>
-    </div>
+  const cardContent = document.createElement('div');
+  cardContent.className = 'card-content';
+
+  const verbTitle = document.createElement('h2');
+  verbTitle.className = 'verb-title';
+  verbTitle.textContent = verb.verb;
+
+  const verbTranslation = document.createElement('p');
+  verbTranslation.className = 'verb-translation';
+  verbTranslation.textContent = verb.quickDefinition;
+
+  const verbMeta = document.createElement('div');
+  verbMeta.className = 'verb-meta';
+
+  const formalityBadge = document.createElement('span');
+  formalityBadge.className = `formality-badge ${verb.formality}`;
+  formalityBadge.setAttribute('aria-label', `Formality: ${verb.formality}`);
+  formalityBadge.textContent = verb.formality;
+
+  const contextBadge = document.createElement('span');
+  contextBadge.className = `context-badge ${verb.context}`;
+  contextBadge.setAttribute('aria-label', `Context: ${verb.context}`);
+  contextBadge.textContent = verb.context;
+
+  verbMeta.appendChild(formalityBadge);
+  verbMeta.appendChild(contextBadge);
+
+  const audioButton = document.createElement('button');
+  audioButton.className = 'audio-button';
+  audioButton.setAttribute('aria-label', `Play pronunciation for ${verb.verb}`);
+  audioButton.innerHTML = `
+    <span class="audio-icon">🔊</span>
+    <span class="audio-text">Pronunciar</span>
   `;
+
+  // Safe audio button click handler
+  audioButton.addEventListener('click', (e) => {
+    e.stopPropagation();
+    playAudio(`assets/audio/verbs/${sanitizeText(verb.verb)}.mp3`, audioButton);
+  });
+
+  cardContent.appendChild(verbTitle);
+  cardContent.appendChild(verbTranslation);
+  cardContent.appendChild(verbMeta);
+  cardContent.appendChild(audioButton);
+
+  card.appendChild(cardImage);
+  card.appendChild(cardContent);
 
   // Click handler for opening modal
   card.addEventListener('click', (e) => {
@@ -530,6 +569,13 @@ function closeModal() {
  * Play audio file with error handling
  */
 function playAudio(audioPath, buttonElement) {
+  // Validate audio path
+  const validPath = validatePath(audioPath);
+  if (!validPath) {
+    console.error('Invalid audio path');
+    return;
+  }
+
   // Stop current audio if playing
   if (state.currentAudio) {
     state.currentAudio.pause();
@@ -542,8 +588,8 @@ function playAudio(audioPath, buttonElement) {
   });
 
   try {
-    // Create new audio instance (audioPath already includes full path)
-    const audio = new Audio(audioPath);
+    // Create new audio instance with validated path
+    const audio = new Audio(validPath);
     state.currentAudio = audio;
 
     // Add playing indicator
@@ -652,8 +698,47 @@ function announceToScreenReader(message) {
     document.body.appendChild(liveRegion);
   }
 
-  // Update message
-  liveRegion.textContent = message;
+  // Update message (sanitized)
+  liveRegion.textContent = String(message).substring(0, 200);
+}
+
+/**
+ * Scroll to content section (hero button)
+ */
+function scrollToContent() {
+  const contentStart = document.getElementById('content-start');
+  if (contentStart) {
+    contentStart.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+/**
+ * Sanitize text content to prevent XSS
+ */
+function sanitizeText(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+
+/**
+ * Validate file path for audio/images
+ */
+function validatePath(path) {
+  // Prevent directory traversal
+  if (path.includes('..') || path.includes('//')) {
+    console.error('Invalid path detected:', path);
+    return null;
+  }
+
+  // Ensure path starts with expected directory
+  const validPrefixes = ['assets/', './assets/', 'data/', './data/'];
+  if (!validPrefixes.some(prefix => path.startsWith(prefix))) {
+    console.error('Path must start with assets/ or data/');
+    return null;
+  }
+
+  return path;
 }
 
 // ============================================================================
@@ -668,9 +753,3 @@ if (document.readyState === 'loading') {
 } else {
   loadApplicationData();
 }
-
-// Export functions to global scope for inline event handlers
-window.playAudio = playAudio;
-window.resetFilters = resetFilters;
-window.openModal = openModal;
-window.closeModal = closeModal;

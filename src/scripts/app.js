@@ -3,6 +3,76 @@
  * Main application logic for filtering, rendering, and audio playback
  */
 
+// Import security utilities (if using modules, otherwise include inline)
+// Note: This assumes ES6 modules are supported. For older browsers, include security functions inline.
+
+// ============================================================================
+// Security Configuration
+// ============================================================================
+
+/**
+ * Sanitize search input to prevent XSS
+ */
+function sanitizeSearchInput(input) {
+  if (typeof input !== 'string') return '';
+  let sanitized = input.replace(/<[^>]*>/g, '');
+  sanitized = sanitized.replace(/[<>{}()[\]\\]/g, '');
+  sanitized = sanitized.trim();
+  const MAX_LENGTH = 100;
+  return sanitized.length > MAX_LENGTH ? sanitized.substring(0, MAX_LENGTH) : sanitized;
+}
+
+/**
+ * Validate filter values against allowed list
+ */
+function validateFilterValue(value, allowedValues) {
+  if (typeof value !== 'string') return 'all';
+  return allowedValues.includes(value) ? value : 'all';
+}
+
+/**
+ * Escape HTML to prevent XSS
+ */
+function escapeHTML(text) {
+  if (typeof text !== 'string') return '';
+  const map = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#x27;',
+    '/': '&#x2F;'
+  };
+  return text.replace(/[&<>"'/]/g, char => map[char]);
+}
+
+/**
+ * Validate and sanitize file paths
+ */
+function sanitizeFilePath(path, type = 'image') {
+  if (typeof path !== 'string') return null;
+
+  // Remove path separators and check for directory traversal
+  const sanitized = path.replace(/[\/\\]/g, '');
+  if (path.includes('..') || path.includes('//')) return null;
+
+  const validExtensions = type === 'image'
+    ? ['.jpg', '.jpeg', '.png', '.webp', '.gif']
+    : ['.mp3', '.wav', '.ogg'];
+
+  const hasValidExtension = validExtensions.some(ext =>
+    sanitized.toLowerCase().endsWith(ext)
+  );
+
+  if (!hasValidExtension) return null;
+
+  return sanitized;
+}
+
+// Allowed values for filters
+const ALLOWED_FORMALITY = ['all', 'formal', 'neutral'];
+const ALLOWED_CONTEXT = ['all', 'cotidiano', 'literario', 'narrativo', 'profesional'];
+
 // ============================================================================
 // Application State
 // ============================================================================
@@ -63,10 +133,12 @@ async function loadApplicationData() {
 function showErrorState(message) {
   const container = document.getElementById('cards-container');
   if (container) {
+    // Sanitize error message to prevent XSS
+    const safeMessage = escapeHTML(message);
     container.innerHTML = `
       <div class="error-state" role="alert">
         <h2>Error Loading Application</h2>
-        <p>${message}</p>
+        <p>${safeMessage}</p>
         <button onclick="location.reload()">Reload Page</button>
       </div>
     `;
@@ -95,29 +167,29 @@ function initializeApp() {
  * Set up all event listeners for the application
  */
 function setupEventListeners() {
-  // Search input with debouncing
+  // Search input with debouncing and sanitization
   const searchInput = document.getElementById('search-input');
   if (searchInput) {
     searchInput.addEventListener('input', debounce((e) => {
-      state.filters.search = e.target.value.trim();
+      state.filters.search = sanitizeSearchInput(e.target.value);
       applyFilters();
     }, 300));
   }
 
-  // Formality filter
+  // Formality filter with validation
   const formalityFilter = document.getElementById('formality-filter');
   if (formalityFilter) {
     formalityFilter.addEventListener('change', (e) => {
-      state.filters.formality = e.target.value;
+      state.filters.formality = validateFilterValue(e.target.value, ALLOWED_FORMALITY);
       applyFilters();
     });
   }
 
-  // Context filter
+  // Context filter with validation
   const contextFilter = document.getElementById('context-filter');
   if (contextFilter) {
     contextFilter.addEventListener('change', (e) => {
-      state.filters.context = e.target.value;
+      state.filters.context = validateFilterValue(e.target.value, ALLOWED_CONTEXT);
       applyFilters();
     });
   }
@@ -335,32 +407,58 @@ function createCard(verb, index) {
   card.dataset.verbIndex = index;
   card.setAttribute('tabindex', '0');
   card.setAttribute('role', 'button');
-  card.setAttribute('aria-label', `${verb.verb} - ${verb.translation}. Click for details.`);
+
+  // Sanitize verb data for display
+  const safeVerb = escapeHTML(verb.verb);
+  const safeTranslation = escapeHTML(verb.translation);
+  const safeFormality = escapeHTML(verb.formality);
+  const safeImage = sanitizeFilePath(verb.image, 'image');
+  const safeAudio = sanitizeFilePath(verb.audioPath, 'audio');
+
+  card.setAttribute('aria-label', `${safeVerb} - ${safeTranslation}. Click for details.`);
 
   // Get image credit
   const credit = getImageCredit(verb.image);
 
+  // Only render if paths are valid
+  if (!safeImage || !safeAudio) {
+    console.error('Invalid file paths for verb:', verb.verb);
+    return card;
+  }
+
   card.innerHTML = `
-    <div class="card-image" style="background-image: url('./assets/images/${verb.image}');">
-      <div class="image-credit" aria-hidden="true">${credit}</div>
+    <div class="card-image" style="background-image: url('./assets/images/${safeImage}');">
+      <div class="image-credit" aria-hidden="true">${escapeHTML(credit)}</div>
     </div>
     <div class="card-content">
-      <h2 class="verb-title">${verb.verb}</h2>
-      <p class="verb-translation">${verb.translation}</p>
+      <h2 class="verb-title">${safeVerb}</h2>
+      <p class="verb-translation">${safeTranslation}</p>
       <div class="verb-meta">
-        <span class="formality-badge ${verb.formality}" aria-label="Formality: ${verb.formality}">
-          ${verb.formality}
+        <span class="formality-badge ${safeFormality}" aria-label="Formality: ${safeFormality}">
+          ${safeFormality}
         </span>
       </div>
       <button
         class="audio-button"
-        aria-label="Play pronunciation for ${verb.verb}"
-        onclick="event.stopPropagation(); playAudio('${verb.audioPath}', this);">
+        aria-label="Play pronunciation for ${safeVerb}"
+        data-audio="${safeAudio}">
         <span class="audio-icon">🔊</span>
         <span class="audio-text">Pronunciation</span>
       </button>
     </div>
   `;
+
+  // Audio button click handler
+  const audioButton = card.querySelector('.audio-button');
+  if (audioButton) {
+    audioButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const audioPath = audioButton.dataset.audio;
+      if (audioPath) {
+        playAudio(audioPath, audioButton);
+      }
+    });
+  }
 
   // Click handler for opening modal
   card.addEventListener('click', (e) => {
@@ -397,23 +495,38 @@ function openModal(index) {
 
   if (!modal || !modalContent) return;
 
-  // Get image credit
-  const credit = getImageCredit(verb.image);
+  // Sanitize verb data
+  const safeVerb = escapeHTML(verb.verb);
+  const safeTranslation = escapeHTML(verb.translation);
+  const safeDefinition = escapeHTML(verb.definition);
+  const safeFormality = escapeHTML(verb.formality);
+  const safePronunciation = escapeHTML(formatPronunciation(verb.pronunciation));
+  const safeImage = sanitizeFilePath(verb.image, 'image');
+  const safeAudio = sanitizeFilePath(verb.audioPath, 'audio');
 
-  // Build modal content
+  // Validate paths
+  if (!safeImage || !safeAudio) {
+    console.error('Invalid file paths for modal verb:', verb.verb);
+    return;
+  }
+
+  // Get image credit
+  const credit = escapeHTML(getImageCredit(verb.image));
+
+  // Build modal content with sanitized data
   modalContent.innerHTML = `
-    <div class="modal-image" style="background-image: url('./assets/images/${verb.image}');">
+    <div class="modal-image" style="background-image: url('./assets/images/${safeImage}');">
       <div class="image-credit">${credit}</div>
     </div>
 
     <div class="modal-body">
       <div class="modal-header">
-        <h2 class="modal-verb">${verb.verb}</h2>
-        <p class="modal-pronunciation">${formatPronunciation(verb.pronunciation)}</p>
+        <h2 class="modal-verb">${safeVerb}</h2>
+        <p class="modal-pronunciation">${safePronunciation}</p>
         <button
           class="audio-button large"
-          aria-label="Play pronunciation for ${verb.verb}"
-          onclick="playAudio('${verb.audioPath}', this);">
+          aria-label="Play pronunciation for ${safeVerb}"
+          data-audio="${safeAudio}">
           <span class="audio-icon">🔊</span>
           <span class="audio-text">Play Pronunciation</span>
         </button>
@@ -421,12 +534,12 @@ function openModal(index) {
 
       <div class="modal-section">
         <h3>Translation</h3>
-        <p class="modal-translation">${verb.translation}</p>
+        <p class="modal-translation">${safeTranslation}</p>
       </div>
 
       <div class="modal-section">
         <h3>Definition</h3>
-        <p class="modal-definition">${verb.definition}</p>
+        <p class="modal-definition">${safeDefinition}</p>
       </div>
 
       <div class="modal-section">
@@ -434,8 +547,8 @@ function openModal(index) {
         <ul class="example-list">
           ${verb.examples.map(example => `
             <li>
-              <p class="example-spanish">${highlightVerb(example.spanish, verb.verb)}</p>
-              <p class="example-english">${example.english}</p>
+              <p class="example-spanish">${highlightVerb(escapeHTML(example.spanish), safeVerb)}</p>
+              <p class="example-english">${escapeHTML(example.english)}</p>
             </li>
           `).join('')}
         </ul>
@@ -446,12 +559,12 @@ function openModal(index) {
         <div class="usage-grid">
           <div class="usage-item">
             <strong>Formality:</strong>
-            <span class="formality-badge ${verb.formality}">${verb.formality}</span>
+            <span class="formality-badge ${safeFormality}">${safeFormality}</span>
           </div>
           <div class="usage-item">
             <strong>Contexts:</strong>
             <div class="context-tags">
-              ${verb.contexts.map(ctx => `<span class="context-tag">${ctx}</span>`).join('')}
+              ${verb.contexts.map(ctx => `<span class="context-tag">${escapeHTML(ctx)}</span>`).join('')}
             </div>
           </div>
         </div>
@@ -460,7 +573,7 @@ function openModal(index) {
       ${verb.culturalNote ? `
         <div class="modal-section cultural-note">
           <h3>Cultural Note</h3>
-          <p>${verb.culturalNote}</p>
+          <p>${escapeHTML(verb.culturalNote)}</p>
         </div>
       ` : ''}
 
@@ -468,12 +581,23 @@ function openModal(index) {
         <div class="modal-section">
           <h3>Related Verbs</h3>
           <div class="related-verbs">
-            ${verb.relatedVerbs.map(related => `<span class="related-verb">${related}</span>`).join('')}
+            ${verb.relatedVerbs.map(related => `<span class="related-verb">${escapeHTML(related)}</span>`).join('')}
           </div>
         </div>
       ` : ''}
     </div>
   `;
+
+  // Add audio button event listener
+  const audioButton = modalContent.querySelector('.audio-button');
+  if (audioButton) {
+    audioButton.addEventListener('click', () => {
+      const audioPath = audioButton.dataset.audio;
+      if (audioPath) {
+        playAudio(audioPath, audioButton);
+      }
+    });
+  }
 
   // Show modal
   modal.style.display = 'flex';
@@ -532,6 +656,14 @@ function closeModal() {
  * Play audio file with error handling
  */
 function playAudio(audioPath, buttonElement) {
+  // Validate audio path
+  const safeAudioPath = sanitizeFilePath(audioPath, 'audio');
+  if (!safeAudioPath) {
+    console.error('Invalid audio path:', audioPath);
+    announceToScreenReader('Invalid audio file');
+    return;
+  }
+
   // Stop current audio if playing
   if (state.currentAudio) {
     state.currentAudio.pause();
@@ -544,8 +676,8 @@ function playAudio(audioPath, buttonElement) {
   });
 
   try {
-    // Create new audio instance
-    const audio = new Audio(`./assets/audio/${audioPath}`);
+    // Create new audio instance with sanitized path
+    const audio = new Audio(`./assets/audio/${safeAudioPath}`);
     state.currentAudio = audio;
 
     // Add playing indicator
@@ -593,13 +725,21 @@ function playAudio(audioPath, buttonElement) {
 
 /**
  * Highlight the verb in example sentences
+ * Note: Input should already be escaped before calling this function
  */
-function highlightVerb(sentence, verb) {
+function highlightVerb(escapedSentence, escapedVerb) {
+  // Remove HTML entities from verb for regex matching
+  const verbBase = escapedVerb.toLowerCase()
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#x27;/g, "'");
+
   // Create regex to match the verb (case-insensitive)
-  const verbBase = verb.toLowerCase();
   const regex = new RegExp(`\\b(${verbBase}\\w*)\\b`, 'gi');
 
-  return sentence.replace(regex, '<strong>$1</strong>');
+  return escapedSentence.replace(regex, '<strong>$1</strong>');
 }
 
 /**
