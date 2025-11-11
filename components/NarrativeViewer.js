@@ -217,8 +217,9 @@ export class NarrativeViewer {
     const verbRoot = verb.substring(0, verb.length - 2);
     // Escape special regex characters in verbRoot
     const escapedRoot = verbRoot.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    // Use Unicode letter property to match any letter including accents
-    const regex = new RegExp(`\\b(${escapedRoot}\\p{L}*)\\b`, 'giu');
+    // Match verb root + letters, using negative lookahead to avoid matching within words
+    // Don't use \b at end since it fails with accented characters
+    const regex = new RegExp(`\\b(${escapedRoot}\\p{L}*(?![\\p{L}]))`, 'giu');
 
     return text.replace(regex, (match) => {
       return `<span class="highlighted-verb" data-verb="${verb}" title="Click para ver definición">${match}</span>`;
