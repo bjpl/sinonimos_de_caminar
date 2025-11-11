@@ -1,0 +1,340 @@
+{
+  "researchMetadata": {
+    "analysisDate": "2025-11-10",
+    "analyst": "Research Agent - Literary Terms Specialist",
+    "objective": "Comprehensive narrative potential analysis of literary walking verbs",
+    "totalLiteraryTerms": 3,
+    "methodology": "Semantic analysis, thematic extraction, narrative arc development"
+  },
+  "literaryTerms": [
+    {
+      "verb": "deambular",
+      "pronunciation": "de-am-bu-lar",
+      "semanticNuances": [
+        "Aimless urban wandering with introspective quality",
+        "Movement without destination or clear purpose",
+        "Implies psychological drift or emotional disconnection",
+        "Suggests reflexive, sometimes melancholic state",
+        "More contained than 'vagar' - typically urban boundaries",
+        "Medical context: ambulatory movement in hospital settings",
+        "Literary weight - formal register, rarely conversational"
+      ],
+      "narrativeThemes": [
+        "Urban alienation and existential drift",
+        "Memory and nostalgia through cityscapes",
+        "Mental searching manifested as physical movement",
+        "Loneliness in crowded spaces",
+        "Post-traumatic wandering after significant life events",
+        "Loss of direction as metaphor for life crisis",
+        "The flaneur's contemplative urban exploration"
+      ],
+      "characterTypes": [
+        "The urban flaneur - intellectual observer of city life",
+        "Lost soul seeking meaning after trauma or loss",
+        "Displaced person unable to settle or find home",
+        "Contemplative wanderer processing internal conflicts",
+        "Recently unemployed or newly divorced individual",
+        "Elderly person revisiting haunts from their past",
+        "Artist or writer seeking inspiration in urban decay"
+      ],
+      "settingIdeas": [
+        "Empty pre-dawn city streets with harsh streetlight",
+        "Old neighborhood undergoing gentrification",
+        "Hospital corridors (medical context)",
+        "Rain-soaked urban plazas at night",
+        "Unfamiliar city after relationship breakup",
+        "Historic district where protagonist once lived",
+        "Industrial zone during off-hours"
+      ],
+      "storyArcPotential": {
+        "part1": {
+          "setup": "Character begins walking without destination after receiving life-changing news (job loss, death, betrayal)",
+          "action": "Protagonist deambulates through familiar streets that now feel alien",
+          "emotion": "Numbness, disconnection, automatic movement"
+        },
+        "part2": {
+          "development": "The act of aimless walking reveals the character's fractured internal state through external observations",
+          "action": "Physical details of the walk mirror psychological fragmentation - broken windows, closed shops, changing neighborhoods",
+          "emotion": "Gradual awakening to surroundings, pattern recognition, memories surfacing"
+        },
+        "part3": {
+          "resolution": "Through the wandering, character reaches unexpected clarity about what they've lost or what they must do",
+          "action": "Walking leads to specific location (childhood home, first apartment, old workplace) that crystallizes decision",
+          "emotion": "Bittersweet acceptance, renewed sense of direction, ironic clarity through directionless walking"
+        }
+      },
+      "literaryDevices": [
+        "Pathetic fallacy - weather/environment reflects mental state",
+        "Stream of consciousness narration during walking",
+        "Urban landscape as mirror of psychological terrain",
+        "Circular route ending where it began (physical vs psychological change)",
+        "Sensory details (sounds, smells) triggering memories"
+      ],
+      "exampleNarrativeHooks": [
+        "Three hours after the funeral, Miguel found himself deambulando through streets he no longer recognized.",
+        "She had been deambulando for so long, the hospital corridors had become more familiar than her own apartment.",
+        "Every night since the layoff, he deambulaba through the financial district, watching others rush to jobs that no longer existed for him."
+      ]
+    },
+    {
+      "verb": "vagar",
+      "pronunciation": "va-gar",
+      "semanticNuances": [
+        "Extended, existential wandering over time and distance",
+        "Suggests lifestyle rather than single episode",
+        "Implies profound lack of anchor or lasting purpose",
+        "More expansive than deambular - crosses boundaries, regions",
+        "Can describe both physical and metaphorical drift",
+        "Timeless quality - vagabondage across seasons or years",
+        "Carries weight of search for something permanently elusive"
+      ],
+      "narrativeThemes": [
+        "Exile and displacement - forced or chosen",
+        "Spiritual quest without clear destination",
+        "Freedom versus rootlessness dialectic",
+        "Generational trauma and inherited restlessness",
+        "Search for homeland, identity, or belonging",
+        "Nomadic existence as rejection of societal norms",
+        "The journey itself as ultimate destination",
+        "Mental wandering paralleling physical movement"
+      ],
+      "characterTypes": [
+        "Political exile unable to return home",
+        "Chronic wanderer escaping personal history",
+        "Spiritual seeker on perpetual pilgrimage",
+        "War veteran unable to settle back into civilian life",
+        "Artist collecting experiences across landscapes",
+        "Fugitive from justice or personal demons",
+        "Descendant of displaced peoples carrying inherited restlessness",
+        "Philosopher-wanderer in tradition of ancient cynics"
+      ],
+      "settingIdeas": [
+        "Vast pampas of Argentina/Uruguay (gauchesca tradition)",
+        "Border regions between countries - liminal spaces",
+        "Remote Andean highlands and mountain passes",
+        "Coastal towns along Pacific or Atlantic",
+        "Desert regions of northern Mexico or Chile",
+        "Train routes crossing multiple countries",
+        "Rural-to-urban migration paths",
+        "Sacred sites on indigenous pilgrimage routes"
+      ],
+      "storyArcPotential": {
+        "part1": {
+          "setup": "Character embarks on journey that will extend far beyond original intention - exile, quest, or escape",
+          "action": "Initial movement has purpose, but circumstances or character flaw prevent reaching destination",
+          "emotion": "Determination gradually giving way to resignation and acceptance of perpetual motion"
+        },
+        "part2": {
+          "development": "Years pass as character vaga through regions, countries, or psychological states, accumulating encounters and wisdom",
+          "action": "Series of episodes showing character in different locations, situations, relationships - all temporary",
+          "emotion": "Oscillation between moments of connection and recurring solitude, freedom and loneliness"
+        },
+        "part3": {
+          "resolution": "Character either finds unexpected home in the wandering itself, OR discovers what they sought was internal all along",
+          "action": "Potential circular return to starting point with transformed perspective, OR continuance with peace",
+          "emotion": "Wisdom earned through movement, acceptance of rootlessness as identity, or bittersweet homecoming"
+        }
+      },
+      "literaryDevices": [
+        "Episodic structure reflecting nomadic existence",
+        "Landscape as character - vast, indifferent, eternal",
+        "Circular time vs linear journey - seasons cycling while character moves",
+        "Intertextual references to classic wanderer tales (Odysseus, Don Quixote)",
+        "Metafictional elements - story itself as wandering narrative"
+      ],
+      "culturalResonances": [
+        "Gaucho literature - Juan Moreira, Martín Fierro",
+        "Latin American magical realism's wandering protagonists",
+        "Indigenous cosmovision of sacred geography",
+        "Political exile narratives from dictatorships",
+        "Contemporary migration stories"
+      ],
+      "exampleNarrativeHooks": [
+        "Forty years after crossing the border, Teresa still vagaba between countries, belonging fully to neither.",
+        "His mind vagaba even when his body stood still, trapped in memories of those years walking from Caracas to Buenos Aires.",
+        "They said the old gaucho had vagado por las pampas for so long, he could no longer remember his true name."
+      ]
+    },
+    {
+      "verb": "errar",
+      "pronunciation": "e-rrar",
+      "semanticNuances": [
+        "Archaic/literary term for wandering, largely obsolete in contemporary speech",
+        "Dual meaning: 'to err/make mistakes' AND 'to wander' (classical usage)",
+        "Carries heavy literary/poetic connotations",
+        "Evokes classical mythology and epic journeys",
+        "Suggests both physical wandering and moral/spiritual error",
+        "Dignified, elevated register - reserved for formal literary contexts",
+        "Allows wordplay between mistake and wandering meanings"
+      ],
+      "narrativeThemes": [
+        "Classical epic journeys and Homeric wandering",
+        "Moral error intertwined with physical lostness",
+        "Redemption through ordeal and wandering",
+        "Punishment manifested as eternal roaming (Cain, Wandering Jew)",
+        "Quest for forgiveness requiring penitential journey",
+        "Wisdom gained through wrong paths taken",
+        "The fortunate fall - necessary error leading to growth"
+      ],
+      "characterTypes": [
+        "Fallen hero seeking redemption through ordeal",
+        "Cursed wanderer paying eternal price for sin",
+        "Knight-errant on quixotic quest",
+        "Penitent making pilgrimage for past wrongs",
+        "Tragic figure whose errors condemn them to roam",
+        "Philosopher-king in exile seeking return to rightful place",
+        "Soul in purgatory working toward salvation"
+      ],
+      "settingIdeas": [
+        "Mythological or quasi-historical landscapes",
+        "Medieval or colonial period settings",
+        "Purgatorial or liminal realms between worlds",
+        "Sacred mountains, deserts, or wilderness requiring passage",
+        "War-torn regions where protagonist wanders post-conflict",
+        "Allegorical landscapes representing moral/spiritual terrain",
+        "Ancient pilgrimage routes with legendary significance"
+      ],
+      "storyArcPotential": {
+        "part1": {
+          "setup": "Protagonist commits grave error (betrayal, violence, hubris) that sets them on path of wandering",
+          "action": "Exile or curse forces character to errar through lands seeking redemption, answer, or return",
+          "emotion": "Guilt, shame, determination to make amends, fear of eternal punishment"
+        },
+        "part2": {
+          "development": "Long wandering brings trials that test character's transformation and understanding of original error",
+          "action": "Series of encounters, challenges, temptations echoing original sin, each offering chance to err again or grow",
+          "emotion": "Gradual humility, wisdom emerging from suffering, recognition of error's full consequences"
+        },
+        "part3": {
+          "resolution": "Character either earns redemption through transformation and returns home, OR accepts eternal wandering as just fate",
+          "action": "Final trial or recognition scene where protagonist demonstrates they have learned from erring",
+          "emotion": "Earned peace, tragic acceptance, or bittersweet homecoming forever changed by the wandering"
+        }
+      },
+      "literaryDevices": [
+        "Wordplay between 'to err' and 'to wander' meanings",
+        "Classical allusions (Odysseus, Aeneas, Dante)",
+        "Allegory - physical journey as moral/spiritual progress",
+        "Biblical echoes - Cain's mark, Wandering Jew, Exodus",
+        "Metrical verse or elevated prose befitting archaic register"
+      ],
+      "culturalResonances": [
+        "Spanish Golden Age literature (Cervantes, picaresque novels)",
+        "Biblical and Christian pilgrimage traditions",
+        "Classical Mediterranean epic tradition",
+        "Reconquista and colonial-era narratives",
+        "Indigenous-Catholic syncretism in pilgrimage practices"
+      ],
+      "exampleNarrativeHooks": [
+        "Como Ulises, he errado por mares desconocidos, but unlike him, I carry no hope of Ithaca.",
+        "They say he erró for forty years after that night, seeking forgiveness that never came.",
+        "In erring from the path of righteousness, she found herself errando through landscapes that mirrored her fallen state."
+      ],
+      "usageNotes": {
+        "contemporary": "Almost exclusively literary/poetic. Modern readers will immediately recognize elevated, archaic register.",
+        "risk": "Can sound pretentious if not properly supported by narrative style and context",
+        "opportunity": "Perfect for historical fiction, magical realism with classical elements, or metafictional play with literary tradition"
+      }
+    }
+  ],
+  "comparativeAnalysis": {
+    "scopeOfWandering": {
+      "deambular": "Urban, contained, single episode or recurring pattern",
+      "vagar": "Expansive, geographical, extended over time and distance",
+      "errar": "Epic, mythological, often eternal or multi-year odyssey"
+    },
+    "psychologicalImplication": {
+      "deambular": "Contemporary alienation, temporary disconnection, urban ennui",
+      "vagar": "Existential restlessness, identity crisis, search for belonging",
+      "errar": "Moral consequence, redemption quest, punishment or penance"
+    },
+    "temporalScale": {
+      "deambular": "Hours to days, single incident or recurring habit",
+      "vagar": "Months to years, defining period of life",
+      "errar": "Years to eternity, potentially transcendent timescale"
+    },
+    "narrativeGenreFit": {
+      "deambular": "Urban literary fiction, psychological realism, contemporary drama",
+      "vagar": "Picaresque novels, road narratives, exile literature, magical realism",
+      "errar": "Epic fantasy, historical fiction, allegory, classical-influenced works"
+    },
+    "culturalRegister": {
+      "deambular": "Formal but modern, accessible literary language",
+      "vagar": "Formal literary, with strong Latin American literary tradition",
+      "errar": "Archaic, deliberately elevated, signals classical literary tradition"
+    }
+  },
+  "narrativeTechniqueRecommendations": {
+    "forDeambular": [
+      "Use present tense for immediacy of wandering experience",
+      "Employ stream-of-consciousness for internal monologue",
+      "Detailed urban sensory description (traffic, neon, concrete)",
+      "Short to medium chapters reflecting walking sessions",
+      "Circular or labyrinthine story structure"
+    ],
+    "forVagar": [
+      "Episodic structure with temporal gaps between episodes",
+      "Multiple geographical settings showing movement",
+      "Flashback structure revealing why character wanders",
+      "Epic scope with intimate moments",
+      "Intergenerational or historical sweep possible"
+    ],
+    "forErrar": [
+      "Elevated, somewhat archaic prose style to match verb",
+      "Classical literary allusions and intertextual references",
+      "Allegorical elements or symbolic geography",
+      "Verse or rhythmic prose for key passages",
+      "Moral/philosophical reflection integrated naturally"
+    ]
+  },
+  "recommendedCombinations": {
+    "modernUrbanNoir": {
+      "primaryVerb": "deambular",
+      "setting": "Mexico City, Buenos Aires, or Bogotá at night",
+      "protagonist": "Detective, journalist, or failed intellectual",
+      "theme": "Corruption, memory, urban transformation"
+    },
+    "migrationEpic": {
+      "primaryVerb": "vagar",
+      "setting": "Central America to US border, or Venezuelan exodus",
+      "protagonist": "Displaced family or individual seeking asylum",
+      "theme": "Belonging, survival, dignity, contemporary nomadism"
+    },
+    "magicalRealismOdyssey": {
+      "primaryVerb": "errar",
+      "setting": "Mythologized Latin American landscape with historical elements",
+      "protagonist": "Figure bearing guilt or curse from historical trauma",
+      "theme": "Colonial legacy, Indigenous memory, redemption"
+    }
+  },
+  "threePartStorySeeds": {
+    "deambularStory": {
+      "title": "Las calles no recuerdan",
+      "part1": "After 20 years abroad, Lucía returns to find her childhood neighborhood transformed by gentrification. Unable to sleep, she deambula through streets where nothing remains as she remembered.",
+      "part2": "Night after night, her walking reveals layers of the neighborhood's transformation. She overhears conversations, observes new inhabitants, sees her past overlaid on the present like a palimpsest.",
+      "part3": "On her final night before returning abroad, she discovers the old bakery survived in a basement space. The encounter with the baker's grandson crystallizes her understanding: memory lives in people, not places."
+    },
+    "vagarStory": {
+      "title": "El que no tiene norte",
+      "part1": "After the dictatorship, Tomás can't settle back into normal life. What begins as a short trip to visit his sister becomes five years vagando through South America, unable to return home.",
+      "part2": "His wandering takes him from Tierra del Fuego to Colombia, through odd jobs, brief relationships, and encounters with others similarly displaced by history and trauma.",
+      "part3": "In a Chilean port town, he meets his daughter—now an adult—who has been searching for him. The reunion forces him to choose between continuing to vagar or facing the past he's been moving to escape."
+    },
+    "errarStory": {
+      "title": "Los años de errancia",
+      "part1": "Colonial Mexico, 1680: A Spanish soldier betrays his Indigenous guide, leading to a massacre. Cursed by the dying shaman, he begins to errar through lands that shift between historical periods.",
+      "part2": "Across centuries, he witnesses consequences of conquest, always arriving too late to prevent suffering, unable to die, forced to understand the gravity of his original error.",
+      "part3": "In present-day, in the same location as the original betrayal, he encounters a descendant of the murdered guide. Only by bearing full witness to their story can he finally end his errancia."
+    }
+  },
+  "researchConclusions": [
+    "All three literary walking verbs operate on different scales of space, time, and meaning, offering distinct narrative opportunities.",
+    "Deambular is ideal for contemporary urban narratives exploring alienation and identity in modern Latin American cities.",
+    "Vagar suits expansive narratives of displacement, exile, and search for belonging across geographical and temporal spans.",
+    "Errar demands elevated literary style but offers unique opportunity for allegory, classical resonance, and moral-philosophical exploration.",
+    "The verbs can be combined within single narrative to show progression: deambular (immediate crisis) → vagar (extended searching) → errar (mythological/eternal significance).",
+    "Cultural context matters: Latin American literary tradition (especially magical realism and exile literature) provides rich resonance for all three terms.",
+    "Each verb naturally suggests different narrative structures, prose styles, and thematic emphases.",
+    "Contemporary authors should consider reader expectations: deambular reads as naturally literary, vagar as traditional/classical, errar as deliberately archaic/elevated."
+  ]
+}

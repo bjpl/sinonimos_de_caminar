@@ -45,7 +45,16 @@
       "Los pacientes pueden deambular libremente por esta área del hospital.",
       "Después de la noticia, salió a deambular sin rumbo fijo por la ciudad."
     ],
-    "culturalNotes": "En la literatura latinoamericana, deambular aparece frecuentemente en prosa narrativa, particularmente en obras que exploran la alienación urbana o temas existenciales. En el habla cotidiana, se considera demasiado formal. Sin embargo, en el español médico profesional, es el término estándar para describir la movilidad del paciente."
+    "culturalNotes": "En la literatura latinoamericana, deambular aparece frecuentemente en prosa narrativa, particularmente en obras que exploran la alienación urbana o temas existenciales. En el habla cotidiana, se considera demasiado formal. Sin embargo, en el español médico profesional, es el término estándar para describir la movilidad del paciente.",
+    "narrativeExperience": {
+      "title": "Pasos Sin Destino",
+      "parts": [
+        "Martín salió del apartamento sin saber adónde iba. Sus pies lo llevaron por calles que conocía de memoria, pero esa noche todo le parecía extraño, como si la ciudad misma hubiera cambiado de rostro. Deambulaba sin propósito, dejando que el ritmo de sus pasos dictara el rumbo. Las luces de los escaparates proyectaban sombras que lo seguían, cómplices silenciosos de su deriva urbana.",
+        "Pasó tres veces por la misma esquina sin darse cuenta. El bar donde solía reunirse con ella seguía abierto, con su letrero de neón parpadeante. Siguió deambulando, evitando conscientemente ciertos lugares mientras sus pies lo traicionaban, llevándolo inevitablemente hacia los recuerdos. La ciudad nocturna se había convertido en un laberinto de su propia construcción, cada calle una decisión que no quería tomar.",
+        "Al amanecer, se encontró frente a su propio edificio sin recordar el camino de regreso. Había deambulado en círculos toda la noche, y en ese andar sin rumbo había trazado un mapa invisible de su estado interior. Comprendió entonces que deambular no es simplemente caminar sin destino—es el acto de externalizar el laberinto interno, de darle forma física a la desorientación del alma. Sus pasos errantes habían sido, al final, el único lenguaje posible para expresar lo que las palabras no podían."
+      ],
+      "literaryNote": "Este relato demuestra cómo 'deambular' trasciende el simple acto de caminar sin rumbo. A diferencia de 'pasear' (que implica placer) o 'caminar' (que es neutral), deambular captura un estado psicológico de desorientación y deriva existencial. La narrativa muestra el verbo en su contexto más auténtico: espacios urbanos nocturnos donde el movimiento físico refleja turbulencia interior. El movimiento circular y repetitivo del personaje ilustra perfectamente la cualidad laberíntica inherente al verbo."
+    }
   },
   {
     "verb": "vagar",
@@ -61,7 +70,16 @@
       "Su mente vagaba mientras miraba por la ventana del tren.",
       "Vagaban de pueblo en pueblo, sin establecerse en ningún lugar."
     ],
-    "culturalNotes": "En la literatura latinoamericana, vagar aparece en obras que exploran temas de desplazamiento, exilio o búsqueda espiritual. Es particularmente prominente en la literatura gauchesca de Argentina y Uruguay, donde vagar por las pampas se convierte en metáfora de libertad y soledad."
+    "culturalNotes": "En la literatura latinoamericana, vagar aparece en obras que exploran temas de desplazamiento, exilio o búsqueda espiritual. Es particularmente prominente en la literatura gauchesca de Argentina y Uruguay, donde vagar por las pampas se convierte en metáfora de libertad y soledad.",
+    "narrativeExperience": {
+      "title": "El Horizonte Perpetuo",
+      "parts": [
+        "Elena llevaba seis meses vagando por la costa cuando llegó a un pueblo cuyo nombre nunca aprendió. No era turista ni buscaba nada en particular; simplemente vagaba, dejando que cada amanecer decidiera su próximo destino. Su mochila contenía lo esencial: ropa, un cuaderno, y las cenizas de su madre que había prometido esparcir en algún lugar que se sintiera correcto. Pero cada playa, cada mirador, cada puerto, le parecía insuficiente para ese gesto final.",
+        "Vagó de pueblo en pueblo, de hostal en hostal, aceptando trabajos temporales que le permitían seguir en movimiento. Conoció a otros vagantes: un músico brasileño que huía del éxito, una pareja argentina que llevaba años recorriendo el continente en bicicleta. Todos compartían esa mirada característica—no perdida sino perpetuamente en búsqueda. No preguntaban 'adónde vas' sino 'cuánto tiempo llevas vagando', como si el vagar mismo fuera el único hogar que necesitaban.",
+        "Un año después, Elena se encontró en un acantilado mirando el océano Pacífico. Las cenizas seguían en su mochila, intactas. Comprendió que había malinterpretado su promesa desde el principio. No se trataba de encontrar el lugar perfecto para esparcirlas, sino de aceptar que vagar era la manera adecuada de honrar a su madre—quien también había sido una vagante del espíritu. El viaje sin fin no era el camino hacia el destino; vagar era el destino mismo. Guardó la urna nuevamente y siguió caminando hacia el sur."
+      ],
+      "literaryNote": "'Vagar' se distingue de otros sinónimos por su dimensión temporal y existencial extendida. Mientras 'deambular' sugiere deriva en espacios delimitados y 'caminar' es neutral, vagar implica un estilo de vida, una filosofía de movimiento perpetuo. Esta narrativa ilustra cómo el verbo captura tanto el vagabundeo geográfico literal como la búsqueda espiritual sin destino fijo. El arco de la protagonista—desde buscar un destino hasta abrazar el vagar mismo como propósito—ejemplifica la profundidad semántica del verbo en la tradición literaria latinoamericana."
+    }
   },
   {
     "verb": "transitar",
@@ -221,6 +239,15 @@
       "Como Ulises, erró durante años antes de hallar su hogar.",
       "Si he errado en mi juicio, pido disculpas."
     ],
-    "culturalNotes": "En América Latina, errar en el sentido de 'vagar' aparece casi exclusivamente en obras literarias, referencias clásicas o habla deliberadamente arcaica. Los hablantes contemporáneos lo usan abrumadoramente para significar 'cometer errores'. El sentido de vagabundeo podría aparecer en poesía formal, novelas históricas o al invocar temas clásicos."
+    "culturalNotes": "En América Latina, errar en el sentido de 'vagar' aparece casi exclusivamente en obras literarias, referencias clásicas o habla deliberadamente arcaica. Los hablantes contemporáneos lo usan abrumadoramente para significar 'cometer errores'. El sentido de vagabundeo podría aparecer en poesía formal, novelas históricas o al invocar temas clásicos.",
+    "narrativeExperience": {
+      "title": "El Camino de la Penitencia",
+      "parts": [
+        "Don Miguel había errado durante veinte años desde la noche que traicionó a su hermano. No vagaba por placer ni deambulaba sin sentido—erraba como los antiguos condenados de las leyendas, llevando su culpa como una cruz invisible. Los campesinos lo reconocían por su paso característico, siempre hacia adelante pero nunca hacia ningún lado en particular, como si buscara un perdón que la tierra misma se negaba a conceder. Su errar no era físico solamente; era la manifestación externa de un alma que nunca hallaría reposo.",
+        "Lo vieron en ferias de pueblos remotos, en procesiones religiosas, en caminos polvorientos que no llevaban a ninguna parte. Algunos decían que erraba siguiendo las rutas coloniales antiguas; otros, que simplemente repetía el camino que su hermano habría tomado aquella noche fatal. Lo que nadie podía negar era la cualidad mítica de su andar—no era un vagabundo común sino una figura casi alegórica, un ejemplo viviente de que algunos errores condenan al alma a errar para siempre.",
+        "Cuando encontraron a Don Miguel, había muerto sentado bajo un árbol de ceibo, con la mirada fija en el horizonte. Los aldeanos discutieron si su errar había terminado finalmente o si continuaría en algún plano más allá de la vida. Pero lo que quedó claro para todos fue que 'errar' no es simplemente caminar sin rumbo—es el castigo eterno de quien cometió un error imperdonable, es la manifestación física del arrepentimiento, es caminar eternamente alejándose de un pasado que nunca puede ser alcanzado ni enmendado. Don Miguel no caminaba: erraba, y en ese errar había toda una teología del pecado y la redención imposible."
+      ],
+      "literaryNote": "'Errar' posee la dimensión más profunda y arcaica de todos los sinónimos de caminar. A diferencia de 'vagar' (búsqueda existencial) o 'deambular' (deriva urbana), errar conlleva connotaciones míticas, religiosas y literarias que se remontan a tradiciones clásicas y medievales. El verbo fusiona dos significados—equivocarse y vagar—en una unidad semántica donde el movimiento perpetuo es consecuencia de un error moral o espiritual. Esta narrativa demuestra cómo errar funciona en contextos alegóricos y folklóricos latinoamericanos, evocando figuras de penitentes eternos y almas condenadas de la tradición oral."
+    }
   }
 ]
