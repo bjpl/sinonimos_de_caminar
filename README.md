@@ -10,7 +10,7 @@ Aplicación web educativa que presenta sinónimos sofisticados del verbo "camina
 
 - **14 sinónimos sofisticados** del verbo caminar
 - **Múltiples voces LATAM** - 8 voces diferentes (México, Colombia, Argentina, Neutral)
-- **56 archivos de audio** - Pronunciación de verbos y ejemplos
+- **56 archivos de audio MP3** - Pronunciación de verbos y ejemplos
 - **Imágenes contextuales** - Fotografías de alta calidad que representan cada concepto
 - **Definiciones matizadas** - Explicaciones detalladas del uso de cada sinónimo
 - **Ejemplos auténticos** - 3 oraciones por verbo en contextos reales
@@ -18,6 +18,7 @@ Aplicación web educativa que presenta sinónimos sofisticados del verbo "camina
 - **Filtros inteligentes** - Por formalidad, contexto, y búsqueda en tiempo real
 - **Diseño elegante** - Paleta de colores tierra, tipografía sofisticada
 - **100% responsive** - Funciona perfectamente en móvil y escritorio
+- **Deployment:** GitHub Pages ready
 
 ---
 
@@ -142,10 +143,12 @@ Cada sinónimo tiene una voz diferente para máxima variedad y exposición a dif
 
 ## 🛠️ Tecnologías
 
-- **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
-- **Audio**: Microsoft Edge TTS (edge-tts)
+- **Frontend**: HTML5, CSS3, JavaScript (Vanilla ES6+)
+- **Audio**: Microsoft Edge TTS (edge-tts) - 56 archivos MP3
 - **Imágenes**: Unsplash API
-- **Hosting**: GitHub Pages / Netlify / Vercel compatible
+- **Status:** No package.json - Pure HTML/CSS/JS static site
+- **Hosting**: GitHub Pages compatible / Netlify / Vercel
+- **Browser Support:** Modern browsers with ES6+ support
 
 ---
 
