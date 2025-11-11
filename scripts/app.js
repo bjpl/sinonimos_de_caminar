@@ -402,8 +402,10 @@ function closeModal() {
 // Highlight verb in example
 function highlightVerb(text, verb) {
     const verbRoot = verb.substring(0, verb.length - 2); // Remove -ar, -er, -ir ending
-    // Use Unicode word characters to properly match accented letters
-    const regex = new RegExp(`\\b${verbRoot}[a-záéíóúüñ]*\\b`, 'giu');
+    // Escape special regex characters in verbRoot
+    const escapedRoot = verbRoot.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    // Match verb root followed by any letters (including accented) or combining diacritics
+    const regex = new RegExp(`\\b${escapedRoot}[a-zA-Zá-úÁ-ÚÜÑÑ\u0300-\u036f]*\\b`, 'giu');
     return text.replace(regex, match => `<strong class="highlighted-verb">${match}</strong>`);
 }
 

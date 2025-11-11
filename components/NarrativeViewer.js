@@ -215,8 +215,10 @@ export class NarrativeViewer {
   _highlightVerb(text) {
     const verb = this.data.verb;
     const verbRoot = verb.substring(0, verb.length - 2);
-    // Use Unicode character class to properly match accented Spanish letters
-    const regex = new RegExp(`\\b(${verbRoot}[a-záéíóúüñ]*)\\b`, 'giu');
+    // Escape special regex characters in verbRoot
+    const escapedRoot = verbRoot.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    // Match verb root followed by any letters (including accented) or combining diacritics
+    const regex = new RegExp(`\\b(${escapedRoot}[a-zA-Zá-úÁ-ÚÜÑÑ\u0300-\u036f]*)\\b`, 'giu');
 
     return text.replace(regex, (match) => {
       return `<span class="highlighted-verb" data-verb="${verb}" title="Click para ver definición">${match}</span>`;
