@@ -404,8 +404,8 @@ function highlightVerb(text, verb) {
     const verbRoot = verb.substring(0, verb.length - 2); // Remove -ar, -er, -ir ending
     // Escape special regex characters in verbRoot
     const escapedRoot = verbRoot.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    // Match verb root followed by any letters (including accented) or combining diacritics
-    const regex = new RegExp(`\\b${escapedRoot}[a-zA-Zá-úÁ-ÚÜÑÑ\u0300-\u036f]*\\b`, 'giu');
+    // Match verb root followed by any Spanish letters (including all accented forms)
+    const regex = new RegExp(`\\b${escapedRoot}[a-záéíóúüñA-ZÁÉÍÓÚÜÑ]*\\b`, 'giu');
     return text.replace(regex, match => `<strong class="highlighted-verb">${match}</strong>`);
 }
 
