@@ -435,7 +435,6 @@ export class NarrativeViewer {
 
     this.currentPart = index;
     this._highlightCurrentPart();
-    this._updateNavigation();
     this._updateTOC();
     this._updateProgress();
 
@@ -459,8 +458,10 @@ export class NarrativeViewer {
 
   _highlightCurrentPart() {
     const parts = this.element.querySelectorAll('.narrative-part');
-    parts.forEach((part, index) => {
-      if (index === this.currentPart) {
+    parts.forEach((part) => {
+      const partIndex = parseInt(part.dataset.part);
+
+      if (partIndex === this.currentPart) {
         part.classList.add('active');
       } else {
         part.classList.remove('active');
@@ -480,11 +481,15 @@ export class NarrativeViewer {
 
   _updateTOC() {
     const tocItems = this.element.querySelectorAll('.toc-item');
-    tocItems.forEach((item, index) => {
-      if (index === this.currentPart) {
+    tocItems.forEach((item) => {
+      const partIndex = parseInt(item.dataset.part);
+
+      if (partIndex === this.currentPart) {
         item.classList.add('active');
+        item.setAttribute('aria-current', 'true');
       } else {
         item.classList.remove('active');
+        item.setAttribute('aria-current', 'false');
       }
     });
   }
