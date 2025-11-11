@@ -134,19 +134,19 @@
 .toc-items {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.625rem;
 }
 
 .toc-item {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.875rem 1.125rem;
+  padding: 1rem 1.25rem;
   border-radius: 12px;
   cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 2px solid rgba(45, 49, 66, 0.08);
-  background: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  background: rgba(248, 249, 250, 0.5);
   position: relative;
   overflow: hidden;
 }
@@ -157,34 +157,30 @@
   left: 0;
   top: 0;
   bottom: 0;
-  width: 3px;
-  background: var(--color-primary);
-  transform: scaleX(0);
-  transition: transform 0.25s ease;
+  width: 4px;
+  background: transparent;
+  transition: all 0.3s ease;
 }
 
-.toc-item:hover {
-  background: rgba(255, 255, 255, 0.95);
-  border-color: rgba(45, 49, 66, 0.15);
+.toc-item:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(45, 49, 66, 0.08);
   transform: translateX(4px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.toc-item:hover::before {
-  transform: scaleX(1);
+.toc-item:hover:not(.active)::before {
+  background: rgba(79, 93, 117, 0.3);
 }
 
 .toc-item.active {
-  background: linear-gradient(135deg, var(--color-primary) 0%, rgba(79, 93, 117, 0.95) 100%);
+  background: linear-gradient(135deg, rgba(45, 49, 66, 0.95) 0%, rgba(79, 93, 117, 0.95) 100%);
   color: white;
-  border-color: var(--color-primary);
-  box-shadow: 0 4px 12px rgba(79, 93, 117, 0.25);
-  transform: translateX(6px);
+  border-color: rgba(45, 49, 66, 1);
+  box-shadow: 0 4px 12px rgba(45, 49, 66, 0.2);
 }
 
 .toc-item.active::before {
-  transform: scaleX(1);
-  background: white;
+  background: #10b981;
 }
 
 .toc-item.completed:not(.active) {
@@ -192,9 +188,8 @@
   border-color: rgba(16, 185, 129, 0.2);
 }
 
-.toc-item.completed:not(.active):hover {
-  background: rgba(16, 185, 129, 0.12);
-  border-color: rgba(16, 185, 129, 0.3);
+.toc-item.completed:not(.active)::before {
+  background: #10b981;
 }
 
 .toc-number {
@@ -202,32 +197,24 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: rgba(45, 49, 66, 0.1);
+  background: rgba(45, 49, 66, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   font-size: 0.9rem;
-  transition: all 0.25s ease;
-  border: 2px solid transparent;
-}
-
-.toc-item:hover .toc-number {
-  background: rgba(45, 49, 66, 0.15);
-  transform: scale(1.05);
+  transition: all 0.3s ease;
 }
 
 .toc-item.active .toc-number {
   background: rgba(255, 255, 255, 0.25);
   color: white;
-  border-color: rgba(255, 255, 255, 0.4);
-  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
 }
 
 .toc-item.completed:not(.active) .toc-number {
-  background: rgba(16, 185, 129, 0.15);
+  background: rgba(16, 185, 129, 0.2);
   color: #059669;
-  border-color: rgba(16, 185, 129, 0.3);
 }
 
 .toc-label {
@@ -237,7 +224,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.01em;
 }
 
 .toc-item.active .toc-label {
@@ -247,18 +234,16 @@
 .toc-check {
   color: #10b981;
   font-size: 1.1rem;
-  font-weight: 700;
-  animation: checkPop 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  font-weight: bold;
+  transition: transform 0.2s ease;
 }
 
 .toc-item.active .toc-check {
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
 }
 
-@keyframes checkPop {
-  0% { transform: scale(0); opacity: 0; }
-  50% { transform: scale(1.2); }
-  100% { transform: scale(1); opacity: 1; }
+.toc-item:hover .toc-check {
+  transform: scale(1.15);
 }
 
 .narrative-progress-section {
