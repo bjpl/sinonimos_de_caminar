@@ -425,7 +425,9 @@ async function openNarrative(verb, event) {
     }
 
     try {
-        const { NarrativeViewer } = await import('../components/NarrativeViewer.js');
+        // Cache-busting import to ensure latest version loads
+        const timestamp = Date.now();
+        const { NarrativeViewer } = await import(`../components/NarrativeViewer.js?v=${timestamp}`);
         const viewer = new NarrativeViewer(synonym, {
             showProgress: true,
             enableHighlighting: true,
