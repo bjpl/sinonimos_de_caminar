@@ -402,7 +402,8 @@ function closeModal() {
 // Highlight verb in example
 function highlightVerb(text, verb) {
     const verbRoot = verb.substring(0, verb.length - 2); // Remove -ar, -er, -ir ending
-    const regex = new RegExp(`\\b${verbRoot}\\w*\\b`, 'gi');
+    // Use Unicode word characters to properly match accented letters
+    const regex = new RegExp(`\\b${verbRoot}[a-záéíóúüñ]*\\b`, 'giu');
     return text.replace(regex, match => `<strong class="highlighted-verb">${match}</strong>`);
 }
 

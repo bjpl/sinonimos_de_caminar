@@ -215,7 +215,8 @@ export class NarrativeViewer {
   _highlightVerb(text) {
     const verb = this.data.verb;
     const verbRoot = verb.substring(0, verb.length - 2);
-    const regex = new RegExp(`\\b(${verbRoot}\\w*)\\b`, 'gi');
+    // Use Unicode character class to properly match accented Spanish letters
+    const regex = new RegExp(`\\b(${verbRoot}[a-záéíóúüñ]*)\\b`, 'giu');
 
     return text.replace(regex, (match) => {
       return `<span class="highlighted-verb" data-verb="${verb}" title="Click para ver definición">${match}</span>`;
