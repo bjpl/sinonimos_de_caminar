@@ -817,6 +817,9 @@ body {
 .highlighted-verb {
     color: var(--color-primary);
     font-weight: 600;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow-wrap: normal;
 }
 
 .modal-cultural {
