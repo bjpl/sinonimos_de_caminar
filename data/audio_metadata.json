@@ -71,6 +71,68 @@
       "text": "errar"
     }
   },
+  "narratives": {
+    "deambular": [
+      {
+        "part": 1,
+        "file": "assets/audio/narratives/deambular_part1.mp3",
+        "voice": "ar_female_1",
+        "text": "Martín salió del apartamento sin saber adónde iba..."
+      },
+      {
+        "part": 2,
+        "file": "assets/audio/narratives/deambular_part2.mp3",
+        "voice": "ar_female_1",
+        "text": "Pasó tres veces por la misma esquina sin darse cuenta..."
+      },
+      {
+        "part": 3,
+        "file": "assets/audio/narratives/deambular_part3.mp3",
+        "voice": "ar_female_1",
+        "text": "Al amanecer, se encontró frente a su propio edificio..."
+      }
+    ],
+    "vagar": [
+      {
+        "part": 1,
+        "file": "assets/audio/narratives/vagar_part1.mp3",
+        "voice": "co_female_1",
+        "text": "Elena llevaba seis meses vagando por la costa..."
+      },
+      {
+        "part": 2,
+        "file": "assets/audio/narratives/vagar_part2.mp3",
+        "voice": "co_female_1",
+        "text": "Vagó de pueblo en pueblo, de hostal en hostal..."
+      },
+      {
+        "part": 3,
+        "file": "assets/audio/narratives/vagar_part3.mp3",
+        "voice": "co_female_1",
+        "text": "Un año después, Elena se encontró en un acantilado..."
+      }
+    ],
+    "errar": [
+      {
+        "part": 1,
+        "file": "assets/audio/narratives/errar_part1.mp3",
+        "voice": "mx_male_1",
+        "text": "Don Miguel había errado durante veinte años..."
+      },
+      {
+        "part": 2,
+        "file": "assets/audio/narratives/errar_part2.mp3",
+        "voice": "mx_male_1",
+        "text": "Lo vieron en ferias de pueblos remotos..."
+      },
+      {
+        "part": 3,
+        "file": "assets/audio/narratives/errar_part3.mp3",
+        "voice": "mx_male_1",
+        "text": "Cuando encontraron a Don Miguel, había muerto..."
+      }
+    ]
+  },
   "examples": {
     "andar": [
       {
