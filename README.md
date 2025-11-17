@@ -1,192 +1,140 @@
 # Sinónimos de Caminar
 
-**Una colección elegante e interactiva de sinónimos del verbo "caminar" en español latinoamericano**
+An elegant, interactive Spanish language learning application exploring synonyms of "caminar" (to walk) with Latin American Spanish pronunciation.
 
-Aplicación web educativa que presenta sinónimos sofisticados del verbo "caminar", con audio pronunciado por múltiples voces latinoamericanas, imágenes contextuales de alta calidad, y definiciones culturalmente relevantes.
+## Live Demo
 
----
+**Deployed Application:** https://bjpl.github.io/sinonimos_de_caminar/
 
-## 🎯 Características
+This project demonstrates interactive language learning through synonym exploration, featuring audio pronunciation from multiple Latin American voices, contextual imagery, and cultural notes.
 
-- **14 sinónimos sofisticados** del verbo caminar
-- **Múltiples voces LATAM** - 8 voces diferentes (México, Colombia, Argentina, Neutral)
-- **56 archivos de audio MP3** - Pronunciación de verbos y ejemplos
-- **Imágenes contextuales** - Fotografías de alta calidad que representan cada concepto
-- **Definiciones matizadas** - Explicaciones detalladas del uso de cada sinónimo
-- **Ejemplos auténticos** - 3 oraciones por verbo en contextos reales
-- **Notas culturales** - Información sobre el uso en LATAM
-- **Filtros inteligentes** - Por formalidad, contexto, y búsqueda en tiempo real
-- **Diseño elegante** - Paleta de colores tierra, tipografía sofisticada
-- **100% responsive** - Funciona perfectamente en móvil y escritorio
-- **Deployment:** GitHub Pages ready
+## Technical Overview
 
----
+**Key Technologies:**
+- Vanilla JavaScript (ES6+)
+- HTML5 / CSS3 with custom properties
+- Microsoft Edge TTS (8 LATAM voices)
+- Unsplash API for imagery
+- Static site deployment
 
-## 📚 Sinónimos Incluidos
+**Implementation Highlights:**
+- 14 curated synonyms with nuanced definitions
+- 56 MP3 audio files covering verbs and example sentences
+- Multi-voice pronunciation (Mexico, Colombia, Argentina, Neutral)
+- Real-time search and filtering by formality and context
+- Responsive grid layout with smooth animations
+- Fully offline-capable after initial load
 
-1. **andar** - Moverse de un lugar a otro a pie (cotidiano)
-2. **pasear** - Caminar sin prisa, por placer (cotidiano)
-3. **deambular** - Andar sin rumbo fijo (literario)
-4. **vagar** - Ir de un lugar a otro sin destino (narrativo)
-5. **transitar** - Pasar por un lugar (profesional)
-6. **peregrinar** - Viajar a pie, especialmente por motivos religiosos (literario)
-7. **desplazarse** - Moverse de un punto a otro (profesional)
-8. **circular** - Moverse por un espacio (profesional)
-9. **recorrer** - Atravesar o cubrir una distancia (cotidiano)
-10. **trajinar** - Andar de un lado a otro con actividad (cotidiano)
-11. **rondar** - Andar alrededor de un lugar (narrativo)
-12. **callejear** - Andar por las calles sin rumbo (cotidiano)
-13. **vagabundear** - Andar errante de un lugar a otro (narrativo)
-14. **errar** - Andar sin rumbo, vagar (literario)
+## Features
 
----
+**Language Learning:**
+- 14 sophisticated synonyms: andar, pasear, deambular, vagar, transitar, peregrinar, desplazarse, circular, recorrer, trajinar, rondar, callejear, vagabundear, errar
+- Detailed definitions with cultural context
+- 3 authentic example sentences per verb
+- Regional usage notes for Latin America
 
-## 🚀 Cómo Usar
+**Interactive Interface:**
+- Search functionality across synonyms and definitions
+- Filter by formality level (formal/neutral/informal)
+- Filter by context (cotidiano/literario/narrativo/profesional)
+- Modal view with full details and pronunciation
+- High-quality contextual images with attribution
 
-### Desarrollo Local
+**Audio System:**
+- 8 distinct LATAM voices for variety
+- Verb pronunciations and example sentences
+- Voice metadata tracking
 
-```bash
-# Clonar el repositorio
-git clone https://github.com/bjpl/sinonimos_de_caminar.git
-cd sinonimos_de_caminar
-
-# Iniciar servidor local (Python)
-python -m http.server 8000
-
-# Abrir en navegador
-http://localhost:8000/src/index.html
-```
-
-### Generar Assets (Opcional)
-
-Si quieres regenerar las imágenes o audio:
-
-```bash
-# Descargar imágenes (requiere API key de Unsplash)
-cd scripts
-node download_images.js
-
-# Generar audio (requiere edge-tts)
-pip install edge-tts
-python generate_audio.py
-```
-
----
-
-## 🏗️ Estructura del Proyecto
+## Exploring the Code
 
 ```
 sinonimos_de_caminar/
-├── src/
-│   ├── index.html              # Aplicación principal
-│   ├── styles/main.css         # Estilos completos
-│   ├── scripts/app.js          # Lógica de la aplicación
-│   ├── data/
-│   │   ├── synonyms.json       # Datos de sinónimos
-│   │   ├── image_credits.json  # Créditos de fotógrafos
-│   │   └── audio_metadata.json # Metadatos de audio
-│   └── assets/
-│       ├── images/             # Imágenes (hero + sinónimos)
-│       └── audio/              # Archivos MP3 (verbos + ejemplos)
-├── scripts/
-│   ├── download_images.js      # Descargador de Unsplash
-│   └── generate_audio.py       # Generador de audio TTS
-├── docs/
-│   ├── BUILD_PROCESS_CHECKLIST.md
-│   ├── REUSABLE_TEMPLATE.md
-│   └── content/                # Investigación de contenido
-└── README.md
+├── index.html              # Main application
+├── app.js                  # Application logic and state management
+├── styles/
+│   └── main.css           # Earth-tones design system
+├── data/
+│   ├── synonyms.json      # Complete synonym dataset
+│   ├── image_credits.json # Unsplash photographer attributions
+│   └── audio_metadata.json # Voice and audio file metadata
+├── assets/
+│   ├── images/            # Hero image and synonym visuals
+│   └── audio/             # 56 MP3 pronunciation files
+├── components/            # Reusable UI components
+├── services/              # Data fetching services
+└── scripts/               # Image and audio generation tools
 ```
 
----
+## Local Development
 
-## 🎨 Características de Diseño
+<details>
+<summary>Click to expand setup instructions</summary>
 
-- **Paleta de colores tierra**: Tonos marrones que evocan caminos y naturaleza
-- **Tipografía elegante**: Serif para contenido español, sans-serif para UI
-- **Animaciones suaves**: Transiciones fluidas de 60fps
-- **Grid responsivo**: Se adapta a cualquier tamaño de pantalla
-- **Modal inmersivo**: Vista detallada de pantalla completa
-- **Efectos hover**: Zoom en imágenes, estados interactivos
+```bash
+# Clone repository
+git clone https://github.com/bjpl/sinonimos_de_caminar.git
+cd sinonimos_de_caminar
 
----
+# Option 1: Open directly in browser
+open index.html
 
-## 🔊 Voces LATAM
+# Option 2: Run local server (recommended)
+python -m http.server 8000
+# Visit http://localhost:8000
 
-El proyecto incluye 8 voces naturales de Microsoft Edge TTS:
+# Optional: Regenerate assets
+cd scripts
+node download_images.js          # Requires Unsplash API key
+pip install edge-tts
+python generate_audio.py         # Generates TTS audio
+```
 
-- 🇲🇽 **Dalia** & **Jorge** - México
-- 🇨🇴 **Salome** & **Gonzalo** - Colombia
-- 🇦🇷 **Elena** & **Tomás** - Argentina
-- 🇺🇸 **Paloma** & **Alonso** - Español Neutral (US)
+**Browser Support:**
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
+</details>
 
-Cada sinónimo tiene una voz diferente para máxima variedad y exposición a diferentes acentos.
+## Design System
 
----
+**Color Palette:**
+- Earth tones inspired by natural pathways
+- Rich browns (#3d2e1f, #2a1f15)
+- Warm tans (#a89080, #c1a898)
 
-## 📖 Créditos
+**Typography:**
+- Cormorant Garamond (Spanish content)
+- Inter (UI elements)
 
-### Imágenes
-- Fuente: [Unsplash](https://unsplash.com)
-- Licencia: Unsplash License (uso gratuito)
-- Créditos completos: Ver `src/data/image_credits.json`
+**Layout:**
+- Responsive masonry grid
+- Smooth 60fps animations
+- Generous whitespace
+- Mobile-first approach
 
-### Audio
-- Generado con: Microsoft Edge TTS
-- Voces: Ver `src/data/audio_metadata.json`
+## Attribution
 
-### Contenido
-- Definiciones, ejemplos, notas culturales: Trabajo original
-- Licencia: Uso educativo con atribución
+**Images:**
+- Source: Unsplash
+- License: Unsplash License (free use)
+- Credits: See data/image_credits.json
 
----
+**Audio:**
+- Generated: Microsoft Edge TTS
+- Voices: 8 LATAM speakers (see data/audio_metadata.json)
 
-## 🛠️ Tecnologías
+**Content:**
+- Definitions, examples, cultural notes: Original work
+- License: Educational use with attribution
 
-- **Frontend**: HTML5, CSS3, JavaScript (Vanilla ES6+)
-- **Audio**: Microsoft Edge TTS (edge-tts) - 56 archivos MP3
-- **Imágenes**: Unsplash API
-- **Status:** No package.json - Pure HTML/CSS/JS static site
-- **Hosting**: GitHub Pages compatible / Netlify / Vercel
-- **Browser Support:** Modern browsers with ES6+ support
+## Related Projects
 
----
-
-## 📝 Licencia
-
-- **Código**: MIT License
-- **Imágenes**: Unsplash License
-- **Audio**: Microsoft Edge TTS (uso educativo)
-- **Contenido**: Uso educativo con atribución
-
----
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Por favor:
-
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+Part of the Spanish Verb Synonyms Series:
+- [Sinónimos de Ver](https://bjpl.github.io/sinonimos_de_ver) - Visual verbs
+- [Sinónimos de Hablar](https://bjpl.github.io/sinonimos_de_hablar) - Speaking verbs
+- [Sinónimos de Comer](https://bjpl.github.io/sinonimos_de_comer) - Eating verbs
 
 ---
 
-## 📧 Contacto
-
-Brandon Lambert - [@bjpl](https://github.com/bjpl)
-
-Proyecto: [https://github.com/bjpl/sinonimos_de_caminar](https://github.com/bjpl/sinonimos_de_caminar)
-
----
-
-## 🙏 Agradecimientos
-
-- [Unsplash](https://unsplash.com) - Por las hermosas fotografías
-- [Microsoft Edge TTS](https://github.com/rany2/edge-tts) - Por las voces naturales
-- Comunidad LATAM de educadores de español
-
----
-
-**¡Explora la riqueza del movimiento en español! 🚶‍♂️🇪🇸**
+**Explora la riqueza del movimiento en español**
